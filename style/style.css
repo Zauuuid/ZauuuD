@@ -1,0 +1,24 @@
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "baloo Bhaijaan 2", sans-serif;
+
+}
+
+
+header {
+    background-color: rgb(255, 255, 255 / 88%);
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-family: "baloo Bhaijaan 2", sans-serif;
+}

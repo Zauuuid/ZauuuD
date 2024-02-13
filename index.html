@@ -1,0 +1,2947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Navbar</title>
+    <link rel="me" href="https://www.blogger.com/profile/13858412640203505786">
+    <title data-lang="tabTitle">عبدالله العلاوي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+    <meta name="google-adsense-platform-domain" content="blogspot.com">
+    <style>
+
+        /* start variables */
+        :root {
+            --main-color: #008cff;
+            --main-color-dark:#0077ff;
+            --second-color: #363636;
+            --section-backgrond: #f6f6f6;
+            --section-padding: 2.8rem;
+            --section-small-padding: 3.8rem;
+            --transition-duration: 0.3s;
+        
+            /* ========Font And Typography====== */
+            --biggest-font-size: 5rem;
+            --bigger-font-size: 3.5rem;
+            --big-font-size: 2.5rem;
+            --h2-font-size: 1.25rem;
+            --h3-font-size: 1.125rem;
+            --normal-font-size: 0.938rem;
+            --smaller-font-size: 0.813rem;
+            --smallest-font-size: 0.75rem;
+            --text-line-height: 2rem;
+            --smaller-text-line-height:  1.2rem;
+        
+            /* ======Margines Bottom====== */
+            --mb-0-5: 0.5rem;
+            --mb-0-75: 0.75rem;
+            --mb-1: 1rem;
+            --mb-1-5: 1.5rem;
+            --mb-2: 2rem;
+            --mb-2-5: 2.5rem;
+        
+        }
+        
+        /* end variables */
+        
+        /* start globel rules */
+        
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        
+        section {
+            overflow: hidden;
+        }
+        
+        .container {
+            padding: var(--section-padding);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        
+        
+        @media (min-width:1200px) {
+            .container {
+                width: 1170px;
+            }
+        } 
+        
+        
+        .title {
+            font-size: var(--big-font-size);
+             font-weight: 900;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            width: fit-content;
+            padding-bottom: var(--mb-0-5);
+            justify-content: center;
+        }
+        
+        .title .title-dot{
+            content: ' ';
+            right: auto;
+            border: solid 13px var(--main-color);
+            border-radius: 15px;
+            position: absolute;
+            z-index: -1;
+            right: -7px;
+        }
+        
+        .text-title {
+            display: flex;
+            justify-content: center;
+            color: var(--second-color);
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1.188rem;
+        }
+        
+        
+        /* start header */
+        
+        header {
+            background-color: rgb(255 255 255 / 88%);
+            width: 100%;
+            padding: 1rem 0;
+            position: fixed;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            
+        }
+        
+        header .container {
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        
+        header .logo {
+            color: var(--main-color);
+             font-weight: 900;
+            font-size: 1.6rem;
+        }
+        
+        header ul {
+            display: flex;
+            font-size: 1.150rem;
+            align-items: center;
+        }
+        
+        header ul li {
+            padding-left: 20px;
+        }
+        
+        header ul li a {
+            color: var(--second-color);
+            transition: var(--transition-duration) ease;
+        }
+        
+        header ul li a:hover {
+            color: var(--main-color);
+        }
+        
+        #lang-sele {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-size: inherit;
+            /* width: 100px; */
+            widows: 10px;
+            list-style: none;
+            /* overflow: hidden; */
+             
+        }
+        
+        .container .icon {
+        display: none;
+            
+        }
+        
+        
+        
+        
+        /* =========main========= */
+        
+        .main {
+            height: 100vh;
+        
+        }
+        
+        .main .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        
+        }
+        
+        .main img {
+            width: 340px;
+            margin-bottom: 60px;
+        }
+        
+        .hero {
+            direction: rtl;
+        }
+        
+        .hero h4 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: var(--second-color);
+        }
+        
+        .hero h1 {
+        color: var(--main-color);
+        margin: 10px 0px;
+        font-size: 3.2rem;
+         font-weight: 900;
+        }
+        
+        .hero p {
+            font-size: 1.34rem;
+            line-height: 1.5;
+            color: var(--second-color);
+        
+        } 
+        
+        .btn {
+            padding: 16px 20px;
+            background-color: var(--main-color);
+            display: inline-block;
+            border-radius: 15px;
+            color: white;
+            font-size: 1.2rem;
+             font-weight: 900;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            transition: var(--transition-duration);
+            width: 247px;
+        }
+        
+        .btn:hover {
+            background-color:  var(--main-color-dark);; 
+        
+        }
+        
+        .hero .socil-icon {
+            width: fit-content;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 0.5rem;
+            font-size: 1.15rem;
+            
+        }
+        
+        .shorts {
+            background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEj_j3j-O8bVHClTgDvmhojdwWtrYRl1efM8DEDiWAYvRMdRYfVU7wxU9SDHb2LnAQ1v91b313BYxT5axeHnBu6GSzl5d4bWkg-XCKRwAVgKuBNQkdIvpcyXPOfjLYHUfqWVAUUiOzyQUasdcBZFVzVAKGZHvH8MnD5zxYEgCH4n9k3G-hec-cxEFuPq);
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            height: 22px;
+            width: 16px;
+            margin: 0;
+            transition: var(--transition-duration);
+        }
+        
+        
+        .shorts:hover {
+            background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhNr82ZjUoUyaQOBjyR8yj00pDDFS4JEgssXxO22s_uQGB6gg9xXYJhje-StQE0z6Sb6mGR61BjYWLyMx-gBQ4vOII0vgigphcy2drrRYc8sRzjAKyg2sMClW3X5HjNeoVIcLGSlrpBWKuLvnfcdwYd2qHVlpKkKBmNO9FGXwHLrhB7Sy2iSPO6TcaY);
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            height: 22px;
+            width: 16px;
+            margin: 0;
+        }
+        
+        .hero .socil-icon a {
+            color: var(--second-color);
+            transition: var(--transition-duration) ease;
+            margin-left: 0.7rem;
+        }
+        
+        .hero .socil-icon a:hover {
+        color: black;
+        }
+        
+        /* =========about========= */
+        
+        .about {
+            padding: var(--section-padding) 0;
+            background-color: #f6f6f6;
+        }
+        
+        .about ::-webkit-scrollbar {
+            background-color: transparent;
+        }
+        
+        .about ::-webkit-scrollbar-corner{
+            background-color: transparent;
+        }
+        
+        .about ::-webkit-scrollbar-thumb {
+            background-color: var(--main-color);
+            border-radius: 1.5rem;
+        
+        }
+        
+        .about .container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            direction: rtl;
+        }
+        
+        .about .text-box {
+            margin-right: 3rem;
+        }
+        
+        .about .title {
+            font-size: var(--big-font-size);
+             font-weight: 900;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding-bottom: var(--mb-2-5);
+            z-index: 1;
+        }
+        
+        .about .title-dot {
+            content: ' ';
+            border: solid 13px var(--main-color,);
+            border-radius: 15px;
+            position: absolute;
+            right: -6px;
+            z-index: -1;
+        }
+        
+        .about p {
+            color: var(--second-color);
+            font-size: 1.099rem;
+            line-height: 1.44rem;
+            height: 290px;
+            overflow: scroll;
+        }
+        
+        .about p a {
+            color: var(--main-color);
+        }
+        
+        .about .btn {
+            padding: 13px 13px 10px 13px ;
+            background-color: var(--main-color);
+            display: inline-block;
+            border-radius: 15px;
+            color: white;
+            font-size: var(--normal-font-size);
+             font-weight: 900;
+            margin-top: var(--mb-1-5);
+            margin-left: var(--mb-0-5);
+            text-align: center;
+            transition: var(--transition-duration);
+        
+        }
+        
+        .about .btn:hover {
+            background-color: var(--main-color-dark);
+        }
+        
+        .about .border-btn{
+            background-color: transparent;
+            color: var(--second-color);
+        }
+        
+        .about .border-btn:hover{
+            background-color: transparent;
+            color: var(--main-color);
+        }
+        
+        .about #about-img {
+            max-width: 100%;
+            width: 300px;
+            border-radius: 20px;
+            /* box-shadow: rgb(54 54 54 / 4%) 13px 20px 20px 0px; */
+        
+        }
+        
+        .about #msafh  {
+            max-width: 100%;
+            width: 130px;
+        }
+        
+        
+        /* =========word========= */
+        
+        .projects {
+            padding: var(--section-padding) 0;
+            direction: rtl;
+        }
+        
+        
+        
+        
+        .projects .projects_filters {
+            display: flex;
+            justify-content: center;
+            margin: var(--mb-2-5) 0;
+        }
+        
+        .projects .project_container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 22px;
+            overflow: hidden;
+        }
+        
+        .projects .projects_item {
+            cursor: pointer;
+            color: black;
+            padding: 0.6rem 0.6rem 0.4rem 0.6rem;
+            font-size: var(--font-medium);
+            border-radius: 0.5rem;
+             font-weight: 900;
+        }
+        
+        .mixitup-control-active {
+            background-color: var(--main-color);
+            color: white !important;
+        }
+        
+        .project_card {
+            background-color: #f6f6f6;
+            border-radius: var(--mb-1);
+            padding: var(--mb-1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            max-width: 100%; 
+            font-size: 0.900;
+        }
+        
+        .project_card .card-text {
+            max-width: 100%;
+            width: 310px;
+        }
+        
+        .project_card img {
+            width: 310px;
+            border-radius: var(--mb-1);
+        }
+        
+        .project_card iframe {
+            max-height: 100%;
+            max-width: 100%;
+            height: 276px;
+            width: 490px;
+        }
+        
+        
+        .projects  a {
+            color: black;
+            transition: var(--transition-duration);
+             font-weight: 700;
+        }
+        
+        .projects a:hover {
+            color: var(--main-color);
+        }
+        
+        .projects h3 {
+            margin-top: var(--mb-1);
+            text-align: right;
+        }
+        
+        
+        .projects .card-text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-content: space-around;
+            align-items: flex-end;
+            margin-top: var(--mb-0-5);
+        }
+        
+        
+        .projects .card-text p {
+            color: var(--second-color);
+        }
+        
+        
+        
+        /* ========= links-for-you ========= */
+        
+        .links-for-you .title::after {
+            margin-left: 85px;
+            
+        }
+        
+        
+        .links-for-you .links-cards {
+            display: flex;
+            gap: 2rem 3rem;
+            margin-top: var(--mb-2-5);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .links {
+            color: var(--second-color) !important;
+            transition: var(--transition-duration);
+        }
+        
+        .links:hover {
+            color: var(--main-color) !important;
+        }
+        /* =========links-for-you========= */
+        
+        
+        /* =========work-together========= */
+        
+        .work-together .title::after {
+            margin-left: 110px;
+        }
+        
+        
+        .contact_container {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            justify-content: center;
+            column-gap: 3rem;
+            margin-top: var(--mb-2-5);
+        }
+        
+        .contact_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: var(--mb-2);
+        }
+        
+        
+        .contact_title {
+            font-weight: 900;
+            font-size: var(--h2-font-size);
+        }
+        
+        .contact_content .contact_info {
+            display: grid;
+            gap: var(--mb-2-5);
+        }
+        
+        .contact_content .contact_card {
+            display: grid;
+            justify-items: center;
+            background-color: white;
+            padding: var(--mb-1-5) var(--mb-2-5);
+            border-radius: var(--mb-0-75);
+            box-shadow: 0px 0px 20px 9px #00000008;
+            width: 250px;
+            margin-top: 20px;
+        }
+        
+        .contact_card-titel {
+            font-size: var(--h3-font-size);
+             font-weight: 900;
+            padding: 5px 0;
+            
+        }
+        
+        .contact_card-data {
+            color: var(--second-color);
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        
+        .contact_card-link {
+            margin-top: var(--mb-1);
+            color: var(--main-color);
+            transition: var(--transition-duration);
+             font-weight: 900;
+        }
+        
+        .contact_card-link:hover {
+            color: #0077ff;
+        }
+        
+        .contact_form-div {
+            display: flex;
+            width: 360px;
+            gap: 0rem;
+            margin: 0 auto;
+            flex-direction: column;
+            width: 360px;
+            margin: 0 auto;
+        }
+        
+        .contact_form-div .contact_form-input {
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--main-color);
+            background: none;
+            color: black;
+            outline: none;
+            padding: var(--mb-1);
+            border-radius: var(--mb-0-75);
+            font-size: 1.2rem;
+        }
+        
+        .contact_form-div p {
+            margin-top: 1.5rem;
+            align-self: center;
+            text-align: center;
+        }
+        
+        .contact_form-div p a {
+            color: var(--main-color);
+        }
+        
+        .contact_form-div p a:hover {
+            color: #0077ff;
+        }
+        
+        .contact_form-div .button {
+            border: none;
+            background: var(--section-backgrond);
+            color: #363636;
+            border-radius: var(--mb-0-75);
+            font-size: 1.3rem;
+            width: 6.7rem;
+            height: 2.9rem;
+            margin-top: var(--mb-2);
+            padding-top: 0.3rem;
+             font-weight: 900;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition-duration);
+        }
+        
+        .contact_form-div .button:hover {
+            background: var(--main-color);
+            color: white;
+            box-shadow: 0px 0px 20px 9px #008cff18;
+        
+        }
+        
+        /* =========sponsor========= */
+        
+        .sponsor-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .sponsor .contact_title {
+            color: var(--main-color);
+            text-align: center;
+        }
+        
+        .sponsor_content {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2rem 4rem;
+            margin-top: var(--mb-2-5);
+            flex-wrap: wrap;
+        }
+        
+        
+        .sponsor_content .sponsor-img {
+            width: 120px;
+        }
+        
+        
+        /* =========footer========= */
+        footer {
+            background-color: var(--main-color);
+            overflow: hidden;
+        }
+        
+        footer .container {
+            padding: var(--mb-2-5) 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--mb-2);
+        }
+        
+        footer .copyright {
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-align: center;
+            line-height: 35px;
+        }
+        
+        
+        .Contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;;
+        }
+        
+        footer .contact_title {
+            font-size: large;
+        }
+        
+        .Contact-container .footer-socil-icon {
+            margin-top: var(--mb-1);
+            color: white;
+            display: flex;
+        }
+        
+        .Contact-container .footer-socil-icon a {
+            margin: 0 var(--mb-0-5);
+            font-size: 1.1rem;
+            color: white;
+            transition: var(--transition-duration);
+        }
+        
+        .Contact-container .footer-socil-icon a:hover {
+            color: black;
+        }
+        
+        .footer-socil-icon .shorts {
+            background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEjJUA2cB7EyeTK_3Fm326oZCQmdyC6dZTjDR90jXzMgP70KLJiIQ7ckKiMMSjckFvZLxnYhWs5hf7b0NUSCqh0lXeDnZHRk9lUk1j6huZeE7f30owAAml_zyLa8a9TbCmRQj6rqBCopvj1Pnehey8pp31iqxaox5cP3uWDXlEHl0rGgoc76-j1rG7Qi);
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            height: 19px;
+            display: inline-block;
+            width: 15px;
+            transition: var(--transition-duration);
+        }
+        
+        .footer-socil-icon .shorts:hover {
+            background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhNr82ZjUoUyaQOBjyR8yj00pDDFS4JEgssXxO22s_uQGB6gg9xXYJhje-StQE0z6Sb6mGR61BjYWLyMx-gBQ4vOII0vgigphcy2drrRYc8sRzjAKyg2sMClW3X5HjNeoVIcLGSlrpBWKuLvnfcdwYd2qHVlpKkKBmNO9FGXwHLrhB7Sy2iSPO6TcaY);
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            height: 19px;
+            display: inline-block;
+            width: 15px;
+            transition: var(--transition-duration);
+        }
+        
+        
+        /* ------- Carousel ------- */
+        
+        .sliderr{
+            width: 360px;
+            height: 480px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        .sliderr .listt{
+            position: absolute;
+            width: max-content;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            transition: 1s;
+        }
+        .sliderr .listt img{
+            width: 360px;
+            height: 480px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .sliderr .buttons{
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sliderr .buttons button{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            font-family: monospace;
+            font-weight: 900;
+            font-size: x-large;
+            opacity: 50%;
+            transition: 0.5s;
+        }
+        .sliderr .buttons button:hover{
+            opacity: 100%;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .sliderr .dotss{
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            color: #fff;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .sliderr .dotss li{
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            background-color: #0077ff;
+            margin: 10px;
+            border-radius: 20px;
+            transition: 0.5s;
+            opacity: 70%;
+            transition: 0.5s;
+        }
+        .sliderr .dotss li:hover{
+            opacity: 100%;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        .sliderr .dotss li.active{
+            width: 30px;
+            background-color: white;
+        }
+        
+        
+        /* ============== Media s ================= */
+        
+        @media screen and (max-width: 414px) {
+        
+            .container {
+                padding: var(--section-small-padding);
+            }
+        
+            .main {
+                height: 120vh;
+            }
+        
+            .main .container {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: var(--mb-1);
+            }
+        
+            header .container ul {
+                font-size: 1rem !important;
+            }
+        
+            .hero {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            }
+        
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        
+        
+            .about .container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .about .text-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            margin-top: var(--mb-2-5);
+            margin-right: 0;
+            }
+        
+            .about .story-text {
+                height: 65vh;
+            }
+        
+        
+            .about ::-webkit-scrollbar {
+                width: 3px;
+                background-color: transparent;
+            }
+            
+            .about ::-webkit-scrollbar-corner{
+                background-color: transparent;
+            }
+            
+            .about ::-webkit-scrollbar-thumb {
+                background-color: var(--main-color);
+                border-radius: 1.5rem;
+            }
+        
+        
+            .project_card iframe {
+                width: 256px;
+                height: fit-content;
+            }
+        
+            .projects .card-text {
+                font-size: 0.9rem;
+            }
+            
+        
+            .contact_container {
+                grid-template-columns: repeat(1, max-content);
+            }
+        
+            .content-phone {
+                margin-top: var(--mb-2-5);
+                
+            }
+        
+        
+            .contact_form-div {
+                align-items: center;
+                padding: 0 2.1rem;
+            }
+        
+            .contact_form-div .button {
+                width: 9rem;
+                height: 3rem;
+            }
+        
+            .sponsor_content .sponsor-img {
+                width: 40px;
+            }
+        
+            footer .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            }
+        
+            footer .copyright {
+                font-size: var(--normal-font-size);
+                margin: var(--mb-1) 0;
+            }
+        
+            footer .contact_title {
+                display: none;
+            }
+        
+            .sliderr{
+                width: 288px;
+                height: 384px;
+            }
+        
+            .sliderr .listt img{
+                width: 288px;
+                height: 384px;
+            }
+        
+            .sliderr .dotss li.active{
+            width: 500px;
+            background-color: #0077ff;
+        }
+        
+        }
+        
+        @media screen and (max-width: 676px) {
+        
+        header .container {
+            padding: 3px 2rem;
+        }
+        
+        header .container h2 {
+            font-size: 1.2rem;
+        }
+        
+        header ul {
+            background-color: var(--section-backgrond);
+            position: absolute;
+            right: 0;
+            min-width: 200px;
+            top: calc(100% + 16px);
+            transition: var(--transition-duration);
+            width: 100%;
+            display: none;    
+            backdrop-filter: blur(10px);
+            align-items: center;
+            
+        
+        }
+        
+        header ul li {
+            padding: 25px;
+            margin: auto;
+            text-align: center;
+        }
+        .active {
+            display: block !important;
+        }
+        .container .icon {
+            width: 30px;
+            height: 21px;
+            display: block;
+            position: relative;
+        }
+        
+        .container .icon span {
+            background-color: var(--second-color);
+            margin-bottom: 5px;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            transition: var(--transition-duration);
+        
+        }
+        
+        .container  .icon span:first-child {
+            width: 100%;
+            top: 0;
+        }
+        
+        .container .icon span:nth-child(2) {
+            width: 100%;
+            transition: var(--transition-duration);
+            top: 6px;
+        
+        }
+        
+        .container .icon span:last-child {
+            width: 100%;
+            top: 12px;
+        
+        }
+        
+        
+        
+            
+                .main .container {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-top: var(--mb-1);
+                }
+            
+                .hero {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                }
+            
+            
+                .about .container {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            
+                .about .text-box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+                margin-top: var(--mb-2-5);
+                margin-right: 0;
+                }
+            
+            .project_card img {
+                width: 310px;
+            }
+            
+        
+        
+            .contact_container {
+                grid-template-columns: repeat(1, max-content);
+            }
+        
+            .content-phone {
+                margin-top: var(--mb-2-5);
+                
+            }
+        
+            .contact_form-div {
+                align-items: center;
+                padding: 0 2.1rem;
+            }
+        
+            .contact_form-div .button {
+                width: 9rem;
+                height: 3rem;
+            }
+        
+            .sponsor_content .sponsor-img {
+                width: 40px;
+            }
+        
+            footer .container {
+                flex-direction: column-reverse;
+            }
+        
+            footer .copyright {
+                margin-top: 1rem;
+            }
+        
+        }
+        
+        @media screen and (max-width: 830px) {
+            
+            .main {
+                height: fit-content;
+            }
+        
+            .main .container {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: var(--mb-1);
+            }
+        
+            header .container h2 {
+                font-size: 1.2rem;
+            }
+        
+            header .container ul {
+                font-size: 0.9rem;
+            }
+            
+            header .logo {
+                font-size: 1.2rem;
+            }
+        
+            .hero {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                }
+        
+        
+            .about .container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+            .about .text-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            margin-top: var(--mb-2-5);
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            }
+        
+            .project_card img {
+                width: 310px;
+            }
+        
+        
+        
+            .contact_container {
+                grid-template-columns: repeat(1, max-content);
+            }
+        
+            .content-phone {
+                margin-top: var(--mb-2-5);
+                
+            }
+        
+            .contact_form-div {
+                align-items: center;
+                padding: 0 2.1rem;
+            }
+        
+            .contact_form-div .button {
+                width: 9rem;
+                height: 3rem;
+            }
+        
+            .sponsor_content .sponsor-img {
+                width: 40px;
+            }
+        
+        
+        }
+        
+        .devsNames{
+            color: white;
+            transition-duration: 0.5s;
+        }
+        .devsNames:hover{
+            color: black;
+            text-decoration: dashed white 1px underline;
+        }
+        
+        </style> 
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEiMfbepZXTNsyAT4MAmP_096PVjhori0zLIuyaCfzkXqZ7-g9M_1zndCWmgtrcbLm3r-KfTwcXkQQRl_P9mQYB4R2SFJUrC1oz_gKdohtXi_s1uwz0NwPUverXVCHE1pC4z8wocFCMu5jzWUGGWBySBFtalgOnsHgSuNKF8l5DMIG-rFNayPC2sQ1u_">
+    <link rel="shortcut" href="https://blogger.googleusercontent.com/img/a/AVvXsEiMfbepZXTNsyAT4MAmP_096PVjhori0zLIuyaCfzkXqZ7-g9M_1zndCWmgtrcbLm3r-KfTwcXkQQRl_P9mQYB4R2SFJUrC1oz_gKdohtXi_s1uwz0NwPUverXVCHE1pC4z8wocFCMu5jzWUGGWBySBFtalgOnsHgSuNKF8l5DMIG-rFNayPC2sQ1u_">
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEiMfbepZXTNsyAT4MAmP_096PVjhori0zLIuyaCfzkXqZ7-g9M_1zndCWmgtrcbLm3r-KfTwcXkQQRl_P9mQYB4R2SFJUrC1oz_gKdohtXi_s1uwz0NwPUverXVCHE1pC4z8wocFCMu5jzWUGGWBySBFtalgOnsHgSuNKF8l5DMIG-rFNayPC2sQ1u_">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEiMfbepZXTNsyAT4MAmP_096PVjhori0zLIuyaCfzkXqZ7-g9M_1zndCWmgtrcbLm3r-KfTwcXkQQRl_P9mQYB4R2SFJUrC1oz_gKdohtXi_s1uwz0NwPUverXVCHE1pC4z8wocFCMu5jzWUGGWBySBFtalgOnsHgSuNKF8l5DMIG-rFNayPC2sQ1u_">
+</head>
+
+<body>
+    
+
+<header>
+
+
+    <div class="container">
+        
+        <!--, لوقو عبدالله العلاوي-->
+        <h2>
+            <a href="#" class="logo" data-lang="headerH2">عبدالله العلاوي</a>
+        </h2>
+        
+        <!--ثلاثة اشرطه تربط الروابط للشاشات الصغيره-->
+        <span class="icon">
+            <span style="top: 6px; transform: rotate(0deg);"></span>
+            <span style="width: 100%; opacity: 1; top: 0px;"></span>
+            <span style="top: 12px; transform: rotate(0deg);"></span>
+        </span>
+        
+        <!--قصتي - اعمالي - لقطة - تواصل-->
+        <ul id="phone-list">
+            <!--
+                <li><a href="#links-for-you1" data-lang="links">🔗 روابط</a></li>
+            -->
+            <li><a href="#work-together1" data-lang="contact">🔗 تواصل</a></li>
+            <li><a href="#word1" data-lang="shot">🔗 لقطة</a></li>
+            <li><a href="#projects" data-lang="Myworks">🔗 اعمالي</a></li>
+            <li><a href="#about" data-lang="mystory">🔗 قصتي</a></li>
+            
+            <!--تغيير اللغة-->
+            <li>
+                <select name id="lang-sele">
+                    <option value="ar"></option>
+                    <option value="en"></option>
+                </select>
+            </li>
+        </ul>
+        
+    </div>
+    
+</header>
+
+
+
+<section class="main">
+    <div class="container" id="main-container">
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5WnWVRu4jXZiis_CPw4DdZ4cRgSgMKX1s2BGUGunOXxWnrw3GpzUXtfDxWnLi7KCU9sUbHLC8I9qhq5OhsSFXrpBWIQq3ghhUCZNhhZN4bHTtZpnYOCpo-jidNTjlqTroSAVdxb9N8ZjDd9UL-MydlxKRmiiwfqwmkzDWnFkorbacVVFV1LSUrArI/s320/hero.png" alt="" id="hero-img">
+        <div class="hero">
+            
+            <h4 id="hero-text-h4" data-lang="heroWelcome">أهلا معك</h4>
+            <h1 id="hero-text-h1" data-lang="heroAbdullah">عبدالله العلاوي</h1>
+            <p id="hero-text-p" data-lang="heroText">طبيب أسنان ومؤسس مجتمع مسافة، أعمل على تحسين جودة حياتي اليومية<br>وأشارك معك توثيق الرحلة بمواقع التواصل الاجتماعي.</p>
+            <a href="#about" class="btn" data-lang="forMore">للمزيد</a>
+            
+            <div class="socil-icon">
+                <a href="https://www.facebook.com/Abdullah.yw" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/Abdullah_yw" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://t.snapchat.com/YGRoHDxw" target="_blank"><i class="fa-brands fa-snapchat"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=966533699194" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://instagram.com/Abdullah_yw" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:abdullah@msafh.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.youtube.com/channel/UCUdtq-Fvlw7_NjzduNTZsbg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@abdullah_yw?lang=ar" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/channel/UCkbZRVTQOWqKlTHfYnFUMJQ" target="_blank"><i class="fa-solid fa-microphone"></i></a>
+                <a href="https://www.youtube.com/channel/UCgz7y_raZ9YpyA3mKqvJTag" target="_blank" class="shorts"></a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<section class="about" id="about">
+    <div class="container" id="about-container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-EZ-SIw4-pTmTpuS-k3Iel1CW539QxJWImhatvJQtcW9ADfkVgTmbVCTzlUVCpGP4cNK4s2VTFZvS1PwmAO6dykugyBK7VSCnZ7drkjUuuRhegfB8FW39RxP-HCQM7wc-UROXkJbOrJS98xnQtNMmXCsDV59K_u1YsVCKjtUe75p8ITsWxCu575bM/s320/about.png" alt="" id="about-img">
+        <div class="text-box">
+            <h1 class="title" data-lang="aboutTitle">
+                <span class="title-dot"></span>
+                قصتي</h1>
+            <p class="story-text" data-lang="storyText">
+                
+    حياااك الله من جديد!<br>
+    معك عبدالله العلاوي، طبيب أسنان سعودي<br>
+    وفي الوقت الحالي أعمل يوميًّا على تحسين حياتي. 🚀<br>
+    صحيح أنّ رحلة التحسين شاقّة وغير منتهية، ولكنّها أيضًا ممتعة! <br>
+    وبوجودك معي، فإنّ التأثير يتعداني ويصل إلى الجميع… وهذا هو الهدف الحقيقي من كل شي!<br>
+    
+    <br>
+    • أهمّ محطات الرحلة كانت:<br>
+    <br>
+    - تأسيس مجتمع مسافة، الذي يهدف إلى تقريب المسافة بين شخصيتك المستقبلية والحالية من خلال معسكرات وورش عمل وتحديات نطلقها باستمرار.<br>
+    - تأسيس مبادرة "أنت أنا"، والتي - على الصعيد الأكاديمي - ساعدت آلاف الطلاب، ثم انضمّ طلاب الجامعات من السعودية وخارجها للتعاون مع طلبة الثانوية بكل حب للعطاء. 🎓 <br>
+    - التخرّج من برنامج قمم الذي يهدف إلى تمكين القيادات الواعدة من طلاب وطالبات جامعات المملكة العربية السعودية.<br>
+    
+    <br>
+    • حصلت على عدة جوائز، أهمها :<br>
+    <br>
+    - جائزة الأميرة صيتة في اليوم الوطني 88 – للفوز بالمركز الأول بمسابقة أفضل فكرة عمل اجتماعي، 2018.<br>
+    - جائزة تقديم محتوى إعلامي توعوي مسموع – للفوز بالمركز الثالث بمسابقة مدينة الملك عبدالعزيز للعلوم والتقنية، 2018.<br>
+    - جائزة وعي – الفوز بالمركز الأول- مسار السناب شات، وزارة الصحة السعودية، 2018.<br>
+    - جائزة طبيب الامتياز الأفضل في التواصل – كلية طب الأسنان، جامعة الملك عبدالعزيز، 2019.<br>
+    - جائزة أم الجود للتوعية بالثقافة العامة، مؤسسة جائزة الأميرة صيتة بنت عبدالعزيز للتميز في العمل الاجتماعي، 2022.<br>
+    
+    <br>
+    • تشرفت - وبكلّ فخر - بتمثيل المملكة العربية السعودية في عدة محافل، منها:<br>
+    <br>
+    - 2018، برنامج القيادات الإعلامية العربية الشابة بالإمارات.<br>
+    - 2018، سفير برنامج MBC الأمل بالجامعات السعودية.<br>
+    - 2019، منتدى شباب العالم بمصر.<br>
+    - 2019، <a href="https://youtu.be/iv5aLFR566s" target="_blank">كلمة الخريجين</a> بالحفل السنوي، جامعة الملك عبدالعزيز.<br>
+    
+    <br>
+    • قدمت محاضرات وخطابات تعليمية، لكن أقربها إلى قلبي حتى اليوم:<br>
+    خطاب "أسمع العالم صوتك" في برنامج <a href="https://youtu.be/foBHMKhSHu4 " target="_blank">TEDxKAU</a>، جامعة الملك عبد العزيز.<br>
+    <br>
+    • شاركت بتقديم ورش عمل، منها: <br>
+    <br>
+    - مسك المهارات.<br>
+    - TEDx، اليوم الوطني في جامعة طيبة.<br>
+    - مؤتمر اليوم العالمي للتطوع، منطقة المدينة المنورة.<br>
+    - 2019- 2022، سلسلة ورشة عمل (صناعة التوعية الصحية) حول مدن السعودية.<br>
+    
+    <br>
+    • بختام 2022م وبداية 2023م، "روتين التسعين" هو المشروع الأهم لمسافة ومجتمعها.<br>
+    
+    <br>
+    وكلّ هذا بفضل الله وكرمه؛<br>
+    وبإذنه، فالرحلة تستمر... 
+
+            </p>
+            
+            <a href="https://msafh.com/" class="btn border-btn" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh28pfBuceO0PcNF4hFTMxi5B9WAe_trHUksRjQfuWUcM_RNeW9H7vccj__rvUi5MgqcquHVeyojLnt-8VDhoxXvYjkhg0J86ElykYwkpZ8h86fMBPLwfjQ0fohOIAyvARd-jF-UQXgpr8-Hp0Rq8KEc8xXKvvMMohTEyDnRrdmKU-NQfpWoUEJkA6a/s320/msafh.png" alt="" id="msafh"></a>
+        
+        </div>
+    </div>
+</section>
+
+
+
+<section class="projects" id="projects">
+    <div class="container">
+        <h1 class="title" data-lang="projectsTitle">
+            <span class="title-dot"></span>
+            أعمالي
+        </h1>
+        
+
+        <div class="projects_filters">
+            <span class="projects_item mixitup-control-active" data-filter="all" data-lang="all">الكل</span>
+            <span class="projects_item" data-filter=".vdieo" data-lang="vdieos">فيديوهات</span>
+            <span class="projects_item" data-filter=".course" data-lang="courses">دورات</span>
+            <span class="projects_item" data-filter=".articl" data-lang="blog">المدونة</span>
+        </div>
+        <div class="project_container" id="MixItUp579F54">
+            
+            <!-- START video PART-->
+            
+            <!-- #new_video / 
+                
+                Youtube videos automatically update via js file, If you want to add a video,
+                copy the DIV that contains a class = "latestVideoEmbed" And the
+                number in vnum increased in every video you add (note that the numbers start from scratch)
+                Example:
+
+                <div class="project_card vdieo">
+                <iframe class="latestVideoEmbed" vnum='4'  frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                Search for #new_video in a Java script file to find the function 
+            -->
+
+            <div class="project_card vdieo">
+                <iframe class="latestVideoEmbed" vnum="0" frameborder="0" allowfullscreen="" src="https://youtube.com/embed/UmTj9eMxSWM?rel=0&amp;loop=1"></iframe>
+            </div>
+            
+            <div class="project_card vdieo">
+                <iframe class="latestVideoEmbed" vnum="1" frameborder="0" allowfullscreen="" src="https://youtube.com/embed/EjxZbWHRL0U?rel=0&amp;loop=1"></iframe>
+            </div>
+
+            <div class="project_card vdieo">
+                <iframe class="latestVideoEmbed" vnum="2" frameborder="0" allowfullscreen="" src="https://youtube.com/embed/Q4BDHnjhMLQ?rel=0&amp;loop=1"></iframe>
+            </div>
+
+            <div class="project_card vdieo">
+                <iframe class="latestVideoEmbed" vnum="3" frameborder="0" allowfullscreen="" src="https://youtube.com/embed/zi76s918HrI?rel=0&amp;loop=1"></iframe>
+            </div>
+            
+
+
+            
+            <!-- END video PART -->
+            
+
+
+
+            <!-- START course PART -->
+            
+            <!-- #new_course / 
+
+                image size 630 * 354 
+                
+                If you want to add a new course, copy the following div:
+
+                <div class="project_card course">
+                <a href="YOUR LINK" target="_blank">
+                <img src="YOUR IMAGE" alt="">
+
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="YOUR VALUE">YOUR TITLE</h3>
+                    
+                    </div>
+                </a>
+            </div>
+                
+                You must change the link of the article and change the image and change the title and price,
+                And change the value of the Data-Lang for h3 (article title)
+                After changing the contents of the DIV, you must put it inside the course part
+                
+                The next step:
+                is for translating the title,
+                Take the value that you changed in data-lang and go to the JavaScript file and search for Language 
+                You will find an object named lang that contains two elements ar, en 
+                put the value of the data-lang that you copied at the end of the two elements and put the Arabic sentence at the 
+                end of the AR element,
+                and put the English sentence at the end of the en element
+            -->
+
+            <div class="project_card course">
+                <a href="https://msafh.com/courses/%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A7%D9%85%D9%84%D8%A9-%D8%AE%D8%A7%D8%B5-%D8%A8%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D9%8A%D9%86-1697394605" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJRGMINK3OT2a84W0LEmw-oi9YuLMA3Ic6Gh5dAsuOugyKXpYUEJfeMiLsG0yCK6KKoBS3bESczA3lseaZUV-xq5t_2_W9m8owF_Fn-TpnoPziGw4wLqVPGZ31k06BNuypsGtDhotvoCRLbunpWHuY7mP0K1m3sK3ecfXHdEJ4pdpefwWFYIpoTKvyO-2/s320/9.png" alt="">
+
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse01">دورة القدرات الشاملة</h3>
+                    
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card course">
+                <a href="https://msafh.com/courses/scm" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGLa14urbPhIymyhGPgfhWEhy6T99F6CShrTppnoqTMUlvPvloCVwVsWInh385kWTDwdT7Qt6-oytQroxAYqL6Sb8skMUhnzny2uJKIkxgeDQ7cB3_r2DXiTR7OuDsD26a5CvoxEDuey_9LYGPqrJD_cL1jNBm4jHSCay703BmiXX4vXtTepG2T7Mufg/s320/7.jpg" alt="">
+
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse0">دورة فن المذاكرة بذكاء</h3>
+                    
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card course">
+                <a href="https://msafh.com/bundles/pp" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOI6z2vnXT0ASJHiaqqnsBf99TQPI8432iHktEUDH5WaDNdF441eYQIlAaVBuAqlmOOeoY1qAfRbZqSePTfrUYTQunVDv4mAsCYi26PeIAQSMFA_hwEOHtWBZFzr3-cDYheTh6-ZjmllGd8lpxg2GOlJSPNyAVcoOLmqQCwewAH9fCbp30qjoMSj_3Rg/s320/6.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse1">دورة رحلة الإنتاجية</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card course">
+                <a href="https://msafh.com/courses/p4" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0YC3ywvlMdyTY9AuZNO4NNFWg8UPhKfKKMewThk-MswRLhf2-2AZtVA6ED7nFE1FkROPaqUdWX-rhdjBkV8QtVZ5CHql1m0hcDEdpmhNen6Q2te-gdO3C8C1KSO40ljot2_zPdBXwSlQFijE_xsx3h0QV2XbrR5I0O-qNWVqUfsY7DeAaf_YPDtQOog/s320/5.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse2">كيف تبني نظام إنتاجية بسيط وفعال؟</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card course">
+                <a href="https://msafh.com/courses/p3" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlde9XiO1DwoqJWSH1g505E3zx8ScyTyl-Q--JYFGE2Eqamd3c1XIej8hLAzig3G8Ue21zRyF30YRRhf6YH2sJ55flZH0L2KHOv6x8DZpc-yhchCfWjkDzivDT99Ym0WKnwA_s3BaCAIyE_BjdeEAApKBy-M7obm9L19loas-6wDI5EWFzo58m0cL-Lw/s320/4.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse3">كيف تتخلص من التشتت والإرهاق وتضاعف تركيزك ونشاطك؟</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card course">
+                <a href=" https://msafh.com/courses/p2" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgVVIPqoa2hwnnxw3Fwh6f_YbX_escihlfwgcmC6y4duESdQTJOL0n1aecfQW9dWQ1FbavqryCavBUXfR97ZA-cVBAK6nxwim1dus5nyahu_Ix0XxXkPRbOLBIkTyBA807mpMYPaFPBrLfW66JIANIV_A6JMVXDG7I7ZaB_5-K-1lEM6-tbcCk7RieJQ/s320/3.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse4">كيف تتخلص من الفوضى وتدير وقتك وترتب أولوياتك؟</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card course">
+                <a href="https://msafh.com/courses/p1" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbIhobsbplvfT3AimVA10omP7qtUzOQusHkuk9mhyqLpLC4UcLlJmXLJd5Wf_9YdB3Etq8_yPl76YYYioK6ieNX7IuYULS0Z30w_W2q8qYUFemUCVNSgW_tSt21pu8kquGXqYJ3YTCnXdieUEztLt-cdHLDSwPE4-3udjy-1cOnwJEj3nmWd71-4JGpg/s320/2.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse5">كيف تبني عادات إيجابية وتتخلص من التسويف والمثالية؟</h3>  
+                    </div>
+                </a>
+            </div>
+
+<!--              <div class="project_card course">
+                <a href="https://msafh.com/courses/1" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBtRm_X9KlUiv52u-CadOqcGDoNaAmFyKSn4egoQ73qIpIrfyaWFp2HO5V9NdIsqF3KGaKlH9kwTNed3rJxvo4NqqlTCjc3Hfu8SuBYJ7MoanSGzMgK_YuxnntSN2nEIHD-MRVJHV-UVI-vvdCkFK8PG32ns956TzoXLoRA-GjUtz97_mq9YER_R51/s8000/1-horizontal.jpg" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="projectCardCourse6">تحدي 1% برمضان</h3>  
+                    </div>
+                </a>
+            </div>
+-->
+            
+            <!-- END course PART -->
+
+
+
+
+            
+            <!-- START articl PART -->
+
+            <!-- #new_article / 
+                
+                image size 630 * 354 
+
+                If you want to add a new article, copy the following div:
+
+                <div class="project_card articl">
+                <a href="YOUR LINK" target="_blank">
+                <img src="YOUR IMAGE" alt="">
+
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="YOUR VALUE">YOUR TITLE</h3>
+                    </div> 
+                </a>
+            </div>
+                
+                You must change the link of the article and change the image and change the title,
+                And change the value of the Data-Lang for h3 (article title)
+                After changing the contents of the DIV, you must put it inside the article part
+                
+                The next step:
+                is for translating the title,
+                Take the value that you changed in data-lang and go to the JavaScript file and search for Language 
+                You will find an object named lang that contains two elements ar, en 
+                put the value of the data-lang that you copied at the end of the two elements and put the Arabic sentence at
+                the end of the AR element,
+                and put the English sentence at the end of the en element
+            -->
+            
+            <div class="project_card articl">
+                <a href="https://msafh.com/blog/%D8%B9%D8%B4%D8%B1-%D8%A3%D9%85%D9%88%D8%B1-%D8%AA%D8%B1%D9%83%D8%AA%D9%87%D8%A7-%D9%85%D9%86-%D8%AD%D9%8A%D8%A7%D8%AA%D9%8A" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDW2G7hXbduGWNnsMaBsi9wmRWKS0mt74ClI38fumuke94zzKUdQizb0RaznoVDqwwiqUUfujYW3lmsj9C9YrCtTJrO_GQMVrTHDIY44n3X7xspidnCKYCbRWj80WZM_zrvkhq6FbYnle7WxYysxKkbCF1kXHcZUuBN5Dp4Vn_6AawvtA7OKc9Mupw/s1600/Untitle1d.png" alt="">
+
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articlOne">عشر أمور تركتها من حياتي</h3>
+                    </div> 
+                </a>
+            </div>
+
+            
+            <div class="project_card articl">
+                <a href="https://msafh.com/blog/%D8%B9%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%82%D8%A7%D8%B8-%D8%A7%D9%84%D9%85%D8%A8%D9%91%D9%83%D8%B1" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAG8UVkT0OajbA8DOBq8EW28OU47mNd8ob6JI78RSThfJKBBry93Ez1tvC6_RwUZFR3YrKn3RCJuW1Jr3d7qqX0kmWSKanNtWsBdJErz4DrWj9Q09v_Tqd2CKMA4s6Ai5pbUa2Q1T2IiPQpMNqA_h1NeUWYfhjrNvddhpVDBgi_72jveUDITEKe5HfWA/s320/2.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articlTwo">عادة الاستيقاظ المبّكر؟</h3>
+                    
+                    </div> 
+                </a>
+            </div>
+
+
+            <div class="project_card articl">
+                <a href="https://msafh.com/blog/%D8%A7%D9%84%D8%AA%D8%AF%D9%88%D9%8A%D9%86-%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A-%D8%B9%D9%84%D8%A7%D8%AC-%D9%81%D8%B9%D9%91%D8%A7%D9%84" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKCE2FLOrTV9JASk5lUwjHSZsGah_WNg9SxLIhgJcCAl3m6TAXsehRt-ZLMgdgit9U03JuYXxOi4VwUF5C35dEka3GlcawrlfS6YIg6vCof0iIskpTFtvgtwJyM79z6JkfTPAkz5aM0Fn6gaIESows43BIK8r8cryawmP9_8c0HKJkF0dtH3NrI6fUhQ/s320/4.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articlThree">التدوين اليومي .. علاج فعّال</h3>
+                    
+                    </div>
+                </a>
+            </div>
+            
+            <div class="project_card articl">
+                <a href="https://msafh.com/blog/%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D9%8A%D9%88%D9%85-%D8%AC%D8%AF%D9%8A%D8%AF" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuPIkGQ5c0xu7LZtxpNZUG9Y7udDaYrpxDvdBFgC_qEbMlUmQFwRz3ZJ1QWWtRxvkcQVfHQwVNP7Kh_js22hpQayerTZYJSTrw8eNjM9F_kXskdPHJXS5R478fx9lE_CODI3r42NSV8V1ZuQYRJEbb9g1_jIt-mzG2ud6QyFPoL5HmUHYPjGLYejc-/s1600/Untitled.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articl4">بداية يوم جديد</h3>
+                    
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card articl">
+                <a href="https://msafh.com/blog/%D8%BA%D9%81%D9%88%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D9%85" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNTfKsn4Y0AkX_2Cr5CoKI14TpHBsKpZnGujHvcVaiDxBCkLM-m3NEv5HmEzfURsAgfT2OVpLNquv__JKMLC1fzKjfqrquB6iIE7jDDyebOIf4dYxunuKW3jMFeJls_OiDx_Pn6B2vkq8Nq-TEgfpurkbwEV2s7-9D0CBOyA5CqBuZE0fbbrzPlkdkGw/s320/5.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articl5">غفوة الدوام !</h3>
+                    
+                    </div>
+                </a>
+            </div>
+
+            <div class="project_card articl">
+                <a href="https://msafh.com/blog/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9-%D8%AA%D8%B3%D8%A7%D8%B9%D8%AF%D9%83-%D8%A8%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%91%D9%85" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlxpxUW4XRXEOXMsul24n-qVkJ6oNKVS0gAW4laSns8hE0sdZ87z3oMRebuahIraQzddFxFTddGmqyNdQzvosoSTz3iWWorp6PSNbUtnNsY4ttcTtRv36qM9ouii8yy8nu7rLU3UCIBIvZkJ0ApFJDGu4iMOC3Z7ugZ8SP6LeOIAlyZWLx4iPD2FiT/s1600/Untitle2d.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articl6">تطبيقات مجانية تساعدك بالتعلّم</h3>
+                    
+                    </div>
+                </a>
+            </div>
+
+<!--               <div class="project_card articl">
+                <a href="https://msafh.com/blog/3582-%D9%81%D9%82%D8%AF%D8%AA-%D8%A7%D9%84%D8%B4%D8%BA%D9%81-%D9%88%D9%83%D8%B0%D8%A7-%D8%AA%D8%AC%D8%A7%D9%88%D8%B2%D8%AA%D9%87" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzdWEi-hJPOmgq0EwvE3L53bGQhd8d5ZnKcVM54P6iJdEniRFaulX9bYXTkzz3qVygQOQivIHf0a6qxjQaO144Bv_d-FvPma0xoW5ETLEExpds4LHfUeQbWsMMMw8RMuLzWelaBsXl5jrXe0v5CJHLl_w2hjL4g9PoSCALrMOf20KRS0o5iVw-gFDVdg/s320/7.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articl7">فقدت الشغف .. وكذا تجاوزته</h3>
+                    
+                    </div>
+                </a>
+            </div>
+-->
+<!--                <div class="project_card articl">
+                <a href="https://msafh.com/blog/3581-%D9%83%D9%8A%D9%81-%D8%AA%D9%83%D9%88%D9%86-%D9%84%D8%B5%D8%A7%D9%8B-%D9%84%D9%82%D9%84%D9%88%D8%A8-%D8%A7%D9%84%D9%86%D8%A7%D8%B3" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCKWhiDkUuVEIri-TKyv7iVDwcLpGuj8ZTd0_gT31r2QFFxpVm7R82Vt5HMuPV0Ux6SlwgyiXAQeCB9cnUTiUATR8L4ABtBv4Ngz94uonn_dec3VUHD9sVurOvVuOil7BpjI7u2n8e8L98GRyiHsNBMs3pHYiaNIHtJAzEBnDqpwwH6dGwFWFrA2i8ow/s320/8.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articl8">كيف تكون لصاً لقلوب الناس؟</h3>
+                    
+                    </div>
+                </a>
+            </div>
+-->
+<!--                <div class="project_card articl">
+                <a href="https://msafh.com/blog/3580-%D8%B9%D8%B4%D8%B1-%D9%82%D9%86%D8%A7%D8%B9%D8%A7%D8%AA-%D8%AA%D8%BA%D9%8A%D8%B1%D8%AA-%D8%A8%D8%AD%D9%8A%D8%A7%D8%AA%D9%8A" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNz1akzYawRZ_Qx836Q3SDLiBK7Pr49d3qCsd28HMa0Ast06BsXVlZ1UzPWXSQs0jL22BGJGR1KgDn6feL93dWqMDDkSy0htJSbL-GeySYteCitz1au5BG91s0K7q5B2NUTMQFDXkf72koeD_IF5w3Ugu_7PZ0gNgMfUPE3Gp7tR0kt_yFVC1uPdf2/s1600/Untitle5d.png" alt="">
+                
+                <div class="card-text">
+                    <h3 class="cardH" data-lang="articl9">عشر قناعات تغيرت بحياتي</h3>
+                    
+                    </div>
+                </a>
+            </div>
+-->
+            
+        
+
+            <!-- END articl PART -->
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<center>
+    <section id="word1"></section>
+    <br>
+    <section class="word" id="word">
+        <div class="container">
+            <h1 class="title" data-lang="worldTitle">
+                <span class="title-dot"></span>
+                لقطة
+            </h1>
+            <p class="text-title" data-lang="shotText">أكثر من ١٠٠ لقطة تختصر المعنى</p>
+<br>
+<br>
+
+            <!-- Slider main container -->
+    <div class="sliderr">
+        <div class="listt" style="left: -2016px;">
+
+        <!-- START image PART -->
+
+        <!-- #new_image
+                
+                If you want to add a  image, copy the following div
+
+                <div class="itemm">
+                    <img src="YOUR IMAGE PATH" alt="" >
+                </div>
+                
+                change image path, and put it at the top the image part, best image size 240 * 320 
+
+            -->
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiOFoVFNcbYw4gWDppbo2oLC5QeSWD8wuU6aHPT-WWKjLKVP8dQgEKRm-hHS2qTXuXDb4TMUULb5Y45bLyoJMbzJHDN3Rt6GNRYBsYd5HZ5EAxsgjFO6HHyd4t7iAHQ8MwTJ5XriyJ8FuW7ZBSBHIiBTonzWHciMVmsLSA6kpHhSXMiVoU5i-V0UofXgk/s320/128.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHvZjc4q0mHri_2a4OBn8DRzG_hUNBJYS0viEDWDvP9TPqQbXXRiZlL87m7EzQfa6drLJJ2ln5zks_O5GOz6DAK478BMJcSQ7g-li3TWhHZ71O0VHYSutYRezLp8ebo4_CwGJh8K-Rhb-Sr1gS5EdhWDRmU6zoQvagOOZMIWLGvP8ltINKpo0SvcMxKWs/s320/127.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQIZ70IgZHAd7aC6bz8GXCgu5EDN108IzlhTggevOPKHmY_QQ_5baIMjXARrw6kUvAerNmt29LIXBwAGCaus7-SROPbirtQgxlHAuPpeIGwIsPueAeYuSLkUxKRehR0kjY6B4vWiZwQyxwICyhTZQsHDENkbEEyrj4TP7NqwTmKWuTHjh3slR75o0C2jY/s320/126.jpg" alt="">
+            </div>
+            
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieHpFA68PI8JZIXRdugzFW7fnegfESvatAfY45oGSVQ1YodEavNiVOFrg20dkd2YZp2-gAy4gy44Xj07Q66HgUbC3igyY4b4ocPaGQIrcaRmZfasWLMaMHGBqxHQ5xtpquxRcbygOEwu9rQmWKBQrQJYA4seLd5vxHKCIFSnXA36dHSnL_yS4hTVtpiStL/s320/125.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNtBVRq9ByJsbPaKE4mQhmt6Eq-cm0-LfqBCxZP6QhVNIdIHoLdTyLg3R4l-qAGJS9JWvlkvq_JtRNa7VVdb9AlU2WMEkpdNfflW-ZeiVgCxmNJ1WOVuONnCI67qV9Oqoy01EO9X4Ut40VujOokeVVkENav8zt1CLSBvB_34-4SXeuUKJ5-SFCa7VoF5Qq/s320/124.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoDRcv9orWfNaXoRr7sU4TWMAWTgAFeaFxGRfPbdw6B4XZcc4VVD9Ndr0xWD_v_2fC9BpOuWo_Hm_RJZkxX5RYIJOTVInac2kv_DJ5alkTfIQimJ3bMbir520LrbTweW7akiOkMS8MZfrblJS1yBrRxbCYJTYUxliBZbuqT9lSc1HvIkcKL1DVeeRf6glB/s320/123.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBanzARTiYLXgws9TrHdA-SRidbvo0J1n5Q4AiMxTZPslGX1sxE1nBrcJHfwa9Zdei7kALQNZ1ivi4KMLrwkdcjwWRaLLaNcIs4bzkeBf7wF6ztcOMLm9b-_GfxWcReFboKfJoVJXVeXpcWy32BI1SVd6jMq-5ai_kaj_XOg5a5Th3_2eiK08Xqor8rweX/s320/122.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho4zrCUsKjj53ItAo_bILmny6dUjjLemEhjjuiZicmuZWkjGT4lVjmxjGlOzooEtmF5SvxDdCS9PXbOUn77idsUY7wawwzswJZYZNp3hAiHbyyf6FvhHNrewlppRAuKzZnNEXgnwtrKqWEhr4wytGyaKwiuzk8m06d_uv0ICYIWSCuI0-wl0DVUJdr-F4v/s320/121.jpg" alt="">
+            </div>
+            
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjRVGbYte3HTDlE7zy9v50Nf77b2xU4aUxz-pBvemxslT18ur_Q1O3klA4mhwgKdq0fmHxectk1KXU-5Mz3AnFlTqkyDhgq1DJ3D8frs-lDBXll1KkVOjd87gxMavVCXO61H_gHj68ScKDvtVYS2f0o36G1EA6reUB2x89R_ssQ2e6cnWvNVloalnN60mI/s320/120.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggX6tciGG0SKbZuLNa2bzfkuPT0swHKtr-s1jJ5pPKjjVV4G-bIZGTA_J4yf6lyeoqYtcDE_bO_eMJio5vABXcCytvcwgxYE8Co_EavLZhIPP0QxXwOpLxgbzj4OHiJ5_-oAHwYkqnehFsPeUlCz1Dgbvtd9eDCgtvx6PjympapZrP-eqBLsLCzb7dR0TN/s320/119.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHUcz9AYw42kNMN8V0FeH5ypnr7HT70MUqqEwKm405Uqy-mnrUnS7mi8891gYCFJ4G7wreXbP0jtJlpLwA6FH1QkZPDRntAXI6F7OK-D-YYQwWB7GWWySEy9K8wz4WTtmRqBj_ZVNhfcVS_k1Kp0aM0fEQTNWSLWq4eYItYKXZK-QoAQ85Xy6-alxW8G4_/s320/118.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhfGZBe8WwT85vPgs0arqiN8AeyssfIVMLFnsgr7vIl_FfhYAk6cTvi-nwYP7N8W1v4yGexIj7QYhImqvwk_smq4dppfzC81pX-0-1_cAAxfE1QTHe_cRWcA2wZA5QTPYGpf0Ly98Ga7hHlGmHS7O2RjpkU-wihAYlDQrcjz5SyrEsG52O30_rsDTavdFp/s320/117.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXk37spCR2cy5l9IExlioEmzLvb6dd7Kaw7rmyxjwSR8-W5utmavjtU0eVJ-ARpdlmQQTZ5xL15Pt3MLXkF3b_sEU7_wCRQRrADhj3F-4RH7w2OMfTAdfW05t32R0zuAhl62Bh5dqvO_yqpgIpsDIiw1_dJbIvAPEU7mAmrgamCK_4qtcKeeZ7ibK8J_7x/s320/116.jpg" alt="">
+            </div>
+            
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc86CG0mPwuSBj1qXTPx6AiyYGqb8bmfIQU13Ik7L8jnUNiYyCzMzCVGZSYDXywChEj-MULbVnR4BqPB3yFJrSRvoVrriKbwBvvKeXtmkPMpbqvxnFGg47X8bvB8YRZmq_bfhQ3ASmYfXYLRNtv4Z82PivOuDkhPFK_O6SdPjYxi5ZDdM1NlI0WDDpbTC6/s320/115.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWMDQ0cuYY0px27RcbzaYjcLGyT042uOrM41BC3LJ9foe94ApCsDNQM2i6D-CsUK_ox8XFutZ_2urVtBNm9-rnigj5B5NKdrBNKo0fPEkon6mwchCFfzBYRm9MdoYVi2edXU9f-TjgLEPWtvTPjRzCangBGn8KPxNum-AWmzYBbXoNE4D3JHVcgUcK2Wva/s320/114.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkZ1EbF0N3v0mcs86UX9BgjvjLsp8IPdMXSUJItbsRnAfKAiavORBxdTVxrAAa7MoNGFtqqdK3V8wO6lHQnqzTSUS_en8sW1XZcwA7DrpRbkPlSsosG-mDkGGgEURB9Oy97JuwIs0k1uoKpWTtatD0Rphs56xXZRB77lfDAd1IcrV5KMjWXHJ4K6-Z1WbZ/s320/113.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip1q3q88rM6ECBWCF2MmPTBE8ZLtfvn-wztRlfWTu2RhFSYeK14Flmnt2RnVwQhGtL89tvDNjThaCJ3KWNXbdUucGOJ-cmHSVl51Cu2Ff-kggxNOpIv9RgE42lcNkr6mRo-HFAzW7svWeK4tWOEipzKy8xPs2Entvb9vl7MCsVSMApKXYdFO72t8rEyUAh/s320/112.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyI7rH8FbUvMUD-_xcYnHEr0hf70OpL3czKarqe_CMJjgyZ1MwREOYjyYAvymZneJnN25eEf825IcRn2n-pOIeXtYxZzEkKaF9RUxi26QPeIXxy4cPeTC43xRfbyFIV_PbZqOpeSJMEPd3_bFC-JZmoi6HfWEDmK2fX0HsSyPel202TkOLvNPnbZbsPXKW/s320/111.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcWuN84y8Ig5VB5Hl0bsobeiC5dHQitSojM6chojVTyGgPSCkw-sn36ZYzrmBfG9j3-ubaqR_LDHU0yiGlGgEKUaji1NcVK7a1sJd3kzwevvBeqBi3Ijvytq_3FCNkq9yTN1C1hMs8bjRIl5NzwJEWEklJU2GZ8ZsYia6DfUcHJVcY0Nmvh0joTtR-TKNK/s320/110.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDfM-c99ME8xhXGLJpoQRafDM3j-mfunU285psCCSUwdSiUs3f7PWzsWR2wZGrb7Vh5ncfmzNzZFhG-48kvt-cKjNwSAV6TdNDWNBpGaVfrHyRW-zyuJY3vsvKVZ1IZGpocmkc1Zj-zns6tKvQrNFhLJ-sJpPY3jC-jBhBKHQ_NTI1rjFsKLCJ3a12wOQQ/s320/109.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7jBYnxGwlXl5nwkOM7EbZ8U4_-f-L1c42IO2QXFk2vQCWhW0sxN0Mdjj4DgBizVnskC7rifJs5BQFz1IRBLAU24MaLPICo1J0DLsvSGsVRq8N7lB1xVPSlOcGuFXK4W3EK4WdgwJQo0zOOm5FMQUw4TKGWRGU6a3wmrQ-l38DOJ4MvedewkABquktsu3b/s320/108.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6QrHf2g45oB0VA_qk7b4JivNMz4xMriY3bkIH-Qgk9OeXxUIJnCGa9Pr8ihiku_P7hwGxrnzMMlbUwdQGQsx4dMTqQYbCmU3UBIF5TW42mRcHhyVlgBQlunaLWn-AM4hYzN_W7OPzN-uSsYk5ax7jKZu5V2Z4yNZcM0lKdOS3ifi87R0DcnqR9YOWU3bo/s320/107.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgpSjudmOA1NEXHX6bVjKt8dK75SJXglQgqQeN9Fmlfor4X5ACtP0IjLuP7mgxkw9awQrkqpwPGUpINFi1inACgdYf_Nbb1d6WMbOeaD7b8pmgMtedIiH4LyYiZWj2gGX75T8NCiQphzKc4t-RZ-kdtLxmCDU-BQWtjnEwcRoD3smD_lWmFwfvnTS9LyEe/s320/106.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKegrVpMgQKVRROlnkx1DiRaAEYiIfjB7h-48anEJxDxl5pJ-o3vRi7od6WWcVFITBi5XqMHDRVX9HuhiIdnV0JrxidnyEZrBC_SVDS5l7L_izFGNwsYsiRbct6kuhgxvAenlZyfmhFjwj5RXdpF6qaQ2YjWuuVJiFQW8Gj1QYZYP40OXRL-V5lH4OIggu/s320/105.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdGhWi2XcBSrNoJ_KPv-PhDI7aEdI_h0olw-v7z82XSGTkZhqvY6OaUpwuavWAuDAbxeFIkuqGe5BIcODaSoUDzilFauLL2C7mhC5EN6Nr_kD4yR2Ql7p9Zt8L--U7-CjSutB880O97gifcbneXSPCFbxdCHjiKw79etykK3Qklcg64yErJlHz2P7Syw/s320/104.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRE4fM3vYEOT0To0K4xvgfU-DciSKEPPUWH1uRCWiW5zO2OAo-PkdyPJgw5JQbfA7bzpFWSTr7L_JXKMIq_Mr466xUP1yTS6UhosikrgqHQBzpIaQbusQq5-UH2fgMk9F-UawidYqUwS9EFNYynuFxyumw52XhBkT7GBD3rsoW0rYLlOTCJvCwmmM9LQ/s320/103.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv_CC32pczmUIiFQvjssKR-T8ULeRlYWoIjYwJwd5z3YZvCMpIEF2iDwH6VZmUf4wzY_QXWe6ECIHvMv-42nebElUydyLOJKgFWgf5V48vH7koiCywMWe6PSZDm5Eqk7-H761JMzIqJ154MbWo522HHzbECsQmFpfPB33vYX_bgTMejMNrQlGnznxZVw/s320/102.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfxOQjzP2k31T7ojK-bGJJYwzNoizgJ_34xheNsoJSW8gy6b5zwvkIoGPG273vr0wXIXIikSK_bPuE41K_I4MMlbrW71srH4sTn8MTIUaEx77A5CGY7feSu1lpRV9rnZRkbdQO5E-7a1Gn3Moroa9xIubOsyv3RugHqrtZ2DujKeYrUBjgvtdbI7cgnA/s320/101.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggDPa5CNY_garQnY-Y4OObKry7WeEgNc5I9ARPs8zBJn54ENEecc_PP2BfOW2ICBq6Fw0EJnNd2dmlOrK6pIHXDdhZPWsUGqWd5hOnIeTf8A3fOmxRi_B0t_0B5ZdU7jaocjPpBBB6LKzfGxzVTxlT-Vfk1dEcCauAl8O5kPVgUZuNbqk4q7v3UiT2mw/s320/100.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivwUGZrenDc1Vc_HvbZjZIttxs0SWuzRipyvx2VNi9IHOr2ye74cC7BdgafMgwwChZGL_b_dWSq8AZdU4Lh8RTykJVauyMvNGpbejPLRuaYFGRQUR78Ne_O3UY4NW6BYlLklTYyqR5Az85aGbdW486rcTZ_F4NPFYCmapPLUU-mUiAgBF4JFTcWwOMrw/s320/99.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinHAW76GiZjjE8XpyLy-6qSAFKEyHtWR1odl20wJmyMFn1xAEyxz-mlHIshkHFlRW6iE4wMv3RIJdh-xZ1KPUshC9CT5MV2ERSmqqgTEpynyW69bQ1MfBGBlRE9PJV6q79zAaNAkXfe6Y_oMX-nVzFkOhnOpsjGY127Avr4aJFqavgX17Jg1x8T6Rt9g/s320/98.jpg" alt="">
+            </div>
+            
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieduC6b0fdKmOImC0Jl0Yk_Ek-A4i4WI_titR9BSuM30zWEHzdEDmq5-kXj3ZnSt-Gn5I0r8VZb2EjOXwopzFQuwG-xiX77behUmzZ1SZ_szHLslO71sKlKs10vYiVxVlhmMPeTchIFXIaUIFASNScVX-CExyd4-oI1e8e67oCfqDnQibNLu_e5iDxEQ/s320/97.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp5WlLnTGWQCPW5FuGg0cR8IzXyg4scTfwJWp0vERdi07WcC9Y06d1_rrRxTTOJ1P31oyhBQzSDIrnD1JsJBhxaIGD7ZupXzpVkeR4Dal-c1OsBhW5MqrP1k3D409pavc1qUQoGeD5Gu6xWq0V-_PMwWOwso13m5D8lmBFDHERVH0s-2j-UGAE7sv22w/s320/96.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyHuwMvOqFaQero80eOr2JUZQ_TN176rawv9bQ_9_0LKgZNhLVCEcAOdbZYJAZoYfsoYXta2iygLnobUArdOB5PN3ALbffohwdNPKV0AXLdWL7N9qgUjcprbPhCBoyLXzhbvgKBYcu9ed2IhozVCyzOpmWizQuttqUmLN7cH3jG_X_hjhYrbbYaP-z0g/s320/95.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8riLQ5861UzA4YNjlPboXT9VgcX7n0tdq28kkI0O7LmFpBfp9uzL6gTx0vK1SdZjWbM80Wc9q0dQjMJ-wZlIuH7BmhFUtHZbGVCiFYLMACSg-EhwUXc6YCS19t3ssf9YWOrAPbfMjrAO6HBef0eRtcCXk4WmdCcDwJHfFwK-GHdWzFEExRJEhhFB8Xg/s320/94.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ2ye9ixEVTOSsh8NKOAzh1ULQdVwfKmmeTFtWwCtUEfZ8fiMToavYY-SOwI3WS-skEo-h8ANbrkyW1LX4xLXyh26ng-fSrx0SeT-_TIdH9Jfg0ozIN5-sV-st-FnGhXpQPkL_DWhJGHY8np9Zyd0HuvdbQvb3eRUs9zIW9Mh3BEOo8s75sJtdUKhjNg/s320/93.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH4EtXmQOrQvTa9zvUSeP7NlOGsg-9NxIc7HI2XB2Sc-Gke5_rot8X6znRpSa5Ki8eVT3ShJ9KVnsrJ2fiQjiQab4WnT0Jfb8iO5uqa8qKDhWS0Gt_LMREZJFRNULF67EJgZlfTNC6bwWl7mFtrTVM_gB3i8_2rwJcd6Wgo0SRBeTwy6M3ElBNRqDXaQ/s320/92.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoeWLp_mWRHcfXxX-bu3wqATs3QB6176NurLjqLkasGXqb4u8poeUJupwK8AhRfuDLHmCUksNjmaOKX8vBiMyTQCN0PJlozwCo_dKTpLdPpSlNcPaI0F1hiw0zJEnMFZpAZ-gZ6rAssB-oiUCEuN6Y98So2LStkiRQoF4owkYzGEGVdPKivTG-W10FvA/s320/91.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjskhMDOqa2rNApLtzH9nk9QKa45PYddaRfTs1nPJowmvWR2jK99aVgn93E0jQwnfTa3SJ0dzuUlyYqFJ_BG9S6I2ritiTHamyjrA1huY_pvj2_hgRT7s_D2rPVLYE9vmYbcmx_ss9hWfVadCVqyhjfqpOlRrSDUBOAWdvfkFNmFD2ebHZwc8zggMib-Q/s320/90.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeXDQ4XyRv8rE665_GC5as8H84OQgrVsgDF1AqJUG7IKSVovUeVTff3PBBK0-6fYHS8ISOyt43YIgRfscgihc5050PdOUtiEZqRVKtx8Pmb88IoTOKlAYEkIRJcrKpWsvui8MGczhvvoziktSIG1EB3-Z2e2k6zSlfVEF2b-dUgD2VB7b-9O-GwPBqaA/s320/89.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYmP3t0WaCXsxnOuAkkphWEIJKI1PyqS97JeaaBcMYTCcH1WGtxMJqeTrvDrh3qKrjsrXDmcfAU12tjI8-zEw_O59RJrjSzeR9v5kmm-L-4k6BAZREmJ3fr9pwUkaVZ5Iaa-YbkFBfgGDJB8ioQxw3HDaxSdd4srBr75H2jZ3sgUAcERMUvEmXD9wrVw/s320/88.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKvW5-yDWnp8v2s5Z4_6PXHaQzFIvR_WSwuKqLze7mU36SYA64nMZ_YuiEaCO_CRDkeTr8EPm2MMfEVGGQ46qaGQDOGfizZCMCxQvAdtTkXD-GSqgVwEdvlH8-Et6nqZ_i-Gv-X8VHSEhWS0XBzckZ93-vCpPuI0pu1t1zeaUgDQQ4z0BZM3uC9RMTCg/s320/87.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK1Pgm4oHE337bhc6C6U3cEAmsymTbjpWhsw-x1sVZbox_Cmf15OvygoUO3A5juqm-BzFJollquXTudDKUVFTjEAVwh11E-j5zIuzUbO-vmpRyKIQPqfbRyWRx5PxJ8vQLjeyRfYGQEP_drbqLLkjmCgAebMC17xYPyBxreuhWzbHBpJ7FVoac2EzcZA/s320/86.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAANAZ4g2-cc3Lssl7O0INi_hTqzQ2q_HsvcMv8rnxHp8anrg7yDzq9-iJhIDmc3nb2aMSSQIowM0V2nLyyz6N56byJU5YSShnTISt5R8wla_Xva7__kqlu-gaiVVq0VV35W-yVY7oG2kE2KE2bdqe4j1gs3stDYKr7WOjs4lr0q1sDPMq_qNvZJc5pQ/s320/85.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgREVjRrdhe7OaZP0Efz-8bY_S6OHpvHT7Ci7xzNz9nnckIvuwMdIloXuPvRKcoz3MNtr6HBu9T1-s6YrmPdImC6bB4BkKjU7zj0JcOR8J580YPbN3jVq4StiQMss2WRBP4GAwJBlU-d4ZDrRYsYR_TLeYhGSQ6p4OmGiXrZbr1YJjBmPU051UGG0caCQ/s320/84.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvxAaONt9gki8XTCZA185N3jN9k1KVjFspvWbW2KiQEXYNyccnHJyUDNU7b5E5c7okxDjVZ4spI4yzjK72Fh1RPbZ9sam8yCsh3n7E4xzHmVMLfjDq8J00MExG50OWUXWe6TnkCakhaX-iuCXr_sy60V83TnceRYsJrhj_zmgYBbB16u9Wi2LrkAblUA/s320/83.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9-BdpSV1xqLN6wRqPfi04w4MuZeGzHSTI3E23Cdytj6imC7dOgN1DdgNU81rhnJhnitiU9GvT2MutZyYMBJVWrsLYWfXWYXmy1LsYbt8MwNCO7NRUU1vX4E1k7VBNTO9E24z2c_pidVFP6ZJppoZUCw6gR-OafQsgkLXlqaGpKnSR-7xl1ygTrS583A/s320/82.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6GfZ_HFV7ZysBHvwlnbZNnmVWUEDGtib5K_U6e5_1CgwM8twkg2Brx4kisyBxMvG23TQ9ifK_H95EmyAPSlc9uQ4Eg5PYIMpX8kLdwduIpg5Z2lc3DRIBRPSpDT6wPVBmO8dwwV_oez8aitpXhSoDDO0XgQhmTaL_wG4ETdzzo1hte6f5qiqUzMyVDA/s320/81.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpNC5eihuYElljcZAf8C-0O99APnKz5UFaz9sPQP9zcJ1F_29dnWQKzfganGbUfNnTD9zA2YF52Dm5Dhv0P1k2FEEhjBQXUFYewGJ2RGXUquWBIiQEsvbSGWpEK_breZmAxQFjsEr3SGpOOVDEIAqPtx21i3JB6Sj8yG5O634wKrXvxpsan-k7FLVDuA/s320/80.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKblW5SYaAcVaCyWcOTGaYQ-aKSj2RQgrvjIWrGenpMOKNUk9s5hbb5acmg_MaqwHXJl9IkJkGbi4HaYJBevsWmHajnjl7cFujnSjwW8otJLFHVChZ1L01R13kW0ANRaMhroKkFnBugCkgNumpMuD9HE6NOXKj44xq7uUE13I8cs2WlpJNUSIyZJl_uA/s320/79.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9jWmY3DiVgs0F2ggsKThGlgw3DWV-41uNHpJTmQmtCWhcgenjAVh7uTsjrZ37zWQ3yA6AJl9spaH2gbSOrI85xPTObIqXY2LnkW0uh9_2_fipvZv0w0MMI0-kyTWRA7_TZZlkFFyF8PuGH5JkpbU2tQiUeOyg5krTvFtU2yqtYj5eeNdu0KR7Fk9F8Q/s320/78.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiLxIcyQahG0nXI_hRPaWbDaoGRuUIMRI1lBuXUtRfFyoBsdtIwVRJQzIH0fF9mtCQTq7l0UDiNGpzi76JT8LLlXhcH7Zohz3Z_14aktjxRhgTKga5oQ1mVXsR6Esx9xM27v-K3DluVzUkwC96C5967O-BjSCsPC8-dtZLAqs169oZQwueM8u1PZqGeg/s320/77.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1-1dYXh-EtK2b6AgGUm7ffPbILy3LekcZlXNEKsKLRfmVuh8wCv08xNQPM9t33yR2wkF6KiWe8HS52IwFeGIR_S8nSEEHJN0FMtMTpWyPx4Z-l_MBmmBGL4GZPKOxWD6_fgGaiysULMBWRB8h-N1rBKTGs9zWTb0Jrs388dQzUN5m3JyiqWjgQ4eIuA/s320/76.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7f83T5n44ZiGC0p9MR5kIPzKrB7gdAU8OAonX-P6B28fQkTXgG_wXtnroOmLoNM99kCCQffu4ApsQwulNgOcb1hOr-JsqDFeZsFPVSwCkH--9Knp3xr6MSvEAigZYZSjOZCAks_8e6yhqDtcXj5_UxSBD4TzPxl09osK6oMZa0K32yPt0W9WpX1s-lQ/s320/75.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA1WAI2vvsB3YP3Zf-e5mKYmfME29pNUhtstA25M4W6YNZbG_ypxAI9sP-qdMW9ShKgi2ycM7jb6oC5inw-Wnm3F4QoHjlp74rmzjbD1fwdpVMFOR9ljV-_a5Cyo035XUAGvQ4k_Y1RVl9yyfqCAtc36KG0VWLVYVP0zlR_oo8ZZl8lKCuWX3GxlMmEg/s320/74.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQvn8pmu8lL3lV1xOyws5Uy5xO9_D4NclQuiDZlzJeoTWktYzxngeKcjaFhS2RHzcePB9qbUSRxM2t89jEp2xJL9nmBOiyzIK3O7SVRUHR-seEj7o0S_R_fyP8tuh1zWZzOr8ZIkWdX_PhtZ9YpJX1sgJ9yVJJr28lwtrv6psjVQgqaNejRZPr_V-6xw/s320/73.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlHce6FpB0bjFsEsp6QJSKF-UTpM2BLgLnOOuAZg-USy9LveSlrNvkg_GnsT7-rHCh5ZAnceWKtptWcOtzgjbLz2Ca8XBBMKKwTcDUqG4cyZROARmBICDsZyHIUGxn7cJq4tEzJyKiqj4ZocStKDD7TUn28pJ1dFz9BkbizvGDrdkwc9idWltp6iXKTA/s320/72.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgat3fwGO2IdV0QLdVmISKBlX5ID7-2k2wzzsPPrRkjKfI4wA_lXj-EpDuve96vM2wJh84ZiNd3FHzJAKi-mRm7GjP1V1md74RkZiFO_bUvrqXFrqGM5v9HPSmLxM3XmxnpKQfr-kbQ5loe53xrZ4xzfIRCq2XW7x1HaH_Bi851yOjw79dJLZcalxTGxg/s320/71.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigs1I3r1Kqu7v3SDqDNM8IBQZ8teA-yM_7hDXhXYLXZS1Q_7O_qfVRZzesRvAdg8fRIo8bdQzmeY7oRcOIAp0jTryhqPw6M_CagF7bFY0qE6ztm_63yjz114DONLXEA1UMkH9kNZg8kI3RQCA7AmcEdf1JB4imF223RqxLeRSCnuoCvy2KIFO3ljlJwQ/s320/70.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq0kLPZQCoIoXPH8hB33kZp1yMuYQa31t9m9ieRii1xTwsFqFXXb3NdfWd5wy505Ft28Yi2lmsUkGrJJBkACyksJAGD1slieYwoCh2i5RYKIy1oFpncZbq6w9yMsh4G8owNqbHht7I3htBWVYipgTHjeBrvyz_jn7XvXvPY62Nv-3tNg-HtCFMLASJGw/s320/69.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGHLTRO5fM9zDFwaPx-crM6bzrSGSo5sLSX70KB_g9VEOHPRydS-Pjkf73VE0q9IGSgxdWV2Jt05mlQzpXh66S3OcldmqiQKuPqjpqkOHdpRo1mj_tJc32UiDSarKscUju2HVHaspDEUp7ypt_w4mBvQUIELMHHqlrqQfPmlQ0bq7uvobj5eKNsyyHgA/s320/68.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVDZJHW2uDC79xqj2qJ0toJhgUzWCD396uhmsO2YBlnMmVnIMnhZR-g3ldKPqi2bHGn1ZNBVsciTgh_YP_kCvRNcyEjqqoZl_JE8prwb7AZd-mGs-n4Uty4Uv0k3NOJ3ALEgKoYVyZ7gWcxMYkojsgNnL2PLoqo0OHq44w6FLeWN9xPX-CpKHaKrFA7g/s320/67.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijjuH1W-Yo2Xvr8SNzYLz71w3QLNNLAFRQiBNL8LrdrqX7TduRt4Vh5-diHQQ5Uh8p5AkXxONts1JV518eqF5NKhCgOXpmqB45lI3KJNpMpRuZxX6965efTbmzUd0fCdAakR4iSBRqsvz2aCgih0-xV_Yj0gMR193h3SLBLk7SUOAG0rqaNCanZTN36g/s320/66.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWQa71pO6VPWkCGTk967HqyXdRuK14-e_ySE_ww_K5bW1f2pRgvn9F0ICkKcPQVxol2jdaxsfIxDPerz3udfHKoAsDs5rl0kPlP9Y2ytv4gxTPeBscQVtbWrIR33_sthC-bbUnH4TNGwzvh0LKnV5BnC2FYpdNCN8Fj8GCCzX_rsK4PcPndYOLQWZg7w/s320/65.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK3_8HzhRD5hcRGXrBHTOtOak22_7IH_csa86waBbyG-CZYH1t_gsLLtx5I5T-bo_19djtTip5qIHkBr-ijvva8VcaPOnhjI50AYFO2sjapdku7jsOGh95HZaPjWwI2imnexYH1jj7KIxZfJp1XHnGHSKuTjtTkGzc6UrwegaGiswhyHntXoFQeyBZOg/s320/64.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXzriE5Lox1hprUxskf72iNcIj20SY5rBuki1iGBRWytwsB-JnZNYpsWRJiFwS0Td4WV6C1of9vpb9W-W8-z_k2PsPVz-bzoASToa3MkXny63t1ylXVgy8FUb9QIf0O0ripfrQqOxPmTTsZRVQKYZQ49lg6CPDDQhbm4CuT_NbAfx3WSXMM4Jis_-_Ug/s320/63.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ_4VIlHtI-FAa8ix97BT9zn7RFQ3WjyJ6URY_djymDxtKIhPI29lOi2DGFgdJR8QIk0A4ONjSGUBr8zNF_e7JiY_x6xRCoztnp29frynOvFgKUQ7wqRRIRuJeumvli31gzk9dTReYZvMAx39MJp9H81xJ_1wS8H1jb-iawifZFcrMAJWPNlaBfxkK5g/s320/62.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3FJVMf_9gz1V4uIjN-VMNEVG0W47ix2kSNzWb8Xog5FO6GFy4wjl9pYsZ6Cff_z2U-3s5WdYJra_G74pGsiv2tt2Aa4yVjb59RT_7eqzsuICV0icbuSXVASIjIGCuRp0yEl9FGx4XhvLCiuQJGXHW88qqUVCsLwhozHExuNjBiRapwbJdICb7E3rBnA/s320/61.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuWv52h1ooPDmJcdjhjnPOsNpOHeInwTsN_Jk30nNmf8Uc9Ziv24B73ZndJts5oxFJsTB2OQSO3wvUuTMV_Fa3dBK0l4RHzr8Uau1R_9_S1GxJ5a6beyKXU9gyKby7Bg8AbFneOMUfcSQ9iVm4sIisavfVYrl72J-LKfekd3B1gJsxbkUIeGse2ubvBQ/s320/60.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEildb-NJweLdZRTFsLOuCwy_Di4saVpUdah_RPZXpaylL95JWtekmOxx-JbBYJMfWyrfNSdoA9R9mncto2ZRqwZzCn_ZZMbbPGZOh8oPtb_JsmuyCX237uec18xaDXTIQWICHvMmDV3ZqK9OTydqTJg2irJ-8awYvJ9wmKq-Um7-4WOmQiDg-qERTZXcQ/s320/59.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvJqFXPkZQSlr31_RkEYpoJHFPLjfY_Xlk4hzU0tAagq6H9eHcJBR2HX9R0ZjEudK7_dRBgXaMEbvZvrCvk5Mb-ldfepNkvR2DY1nAveQ_ad5zoxfx2j9j8HdP1AwR_C4qJQUWcsiiOLm-eli5DR99J_9SAno45jQ99BHyMybsJSPakUL8gHG7fUWATA/s320/58.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi2B_gNzu9wqpSsqdNRYO9svYclp7Tr3jxdJgPturVyRqrMCJDks81WRru3VBBVn0I10LkCq574OlyIYfmfBM8V5ml39HQpepWrbDk-NU8tKhNEdv-83UwGLUFbMqiVwdVebEAEYDVuh6rIjdDZnGoiEK-1tCWVws85rqQFKmo9GmNfqUeEnOXcC1Bnw/s320/57.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRGy8QvGOhPB3BLnvlECd3qha2XuVJe2juzW-fJ_YJQwthxWX9_9qG8S3vLODeukleHMHYWo4_GR-fzJkUp5bOyo9COekHmDaZTfO5rjNyBJXgaAuXKdm5qhZjPcegcmfGG6lgUFet8A9CvWdQDjUAW_HxxdIRV2ocKciJSXIGNaibw-5e2ohrEtfPlg/s320/56.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCGUeYO9s6KCISY1RePVe4LrLXnfTG3-TBt-leeCs3RnUA2fYWwlgfUzF-EzJrf7JGzA5MURcmRfu1MMlXikqfTOtHhOrgsVZo0u0NSRdc4Sz1rOK-4fmsDwCgGgzR9nK3vZ0cxsDVDcE8BGPT2ftFNZvc94wmYG2lV9IyPyK0KAML-ZGfQ9r665IH2Q/s320/55.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGz5-wluVUPCKe9r50w4LYWPmjMkihxHDBsTJ7pFIpBQAP9ocmkEcAWLE0P72NtfmDK59A6KCbZzdzzHQZZCPepwyHliKaG49PF65zeAJAP6pysB0SokaNrpdO0fTX9xxhCtxPuCer5AH1NuRJfoEajSLARS9sIWYwEMIzrN9VIUFaHvAFMJCnVx8eAw/s320/54.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiylg3RrcmLRQzO2ANyL0BPVcU888U8wxjFPk0TlZC2TDf5ekfG6is2PlTAMZgTuPL7v1l9EgLsDnYkNJxnPTXzd9yvgZTQ15VUy3dql-jg7QbAh4FeuQcoOgBm8objTbH6SR7sixjz46J-rGLEzkkNVxQKay5WPlpQqmDCSBCIiZN5PJzhCjfa5ldJyA/s320/53.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidFSJHijbj2RuWHGJNP1sheVrxxQt3DOQDiEdAq51SprbpnsRDCzDX7MLkHbxfjTSg7ljzXuh2_uIuY6DccZybxon-FjrTlvvXHKsnQ3jOVi8-gZuR1Otg6TwvBNdv-_h1rtr-ObaDniDBRgtPhCjZPcNSCVwafY8l3BvFB1r31TTVEhwL24FMIBXFww/s320/52.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKHvkcXvA07KWktzb_59M6e_AmGnF-KBb_RR8Clk4bwjQv-0-4JVQklMfGp_wARQKBjtkSvHj_pn-uKR457mnYiyXcFNxR5KzwXRQOUi5Tx94ptDrOK1UNus1pHwl2SBZyRBkDjwrk3NZ556C1D0Tft11W41deONk_F9bpVyNYU6dGkj_n56eI0zK3rA/s320/51.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuZUoKxM4x6Hvuc-ETfpKNeKf5lOVk2ydpTY9RaxKE_PeOxEjGGB5CG1BCO6YieN2DpRoXL8l9-mWxF2Xh_lJ89oay6iRq0iscwwTYVDfFG0_0xNJtG8lcAhY2yJj8CDGv7vJmfM9BwY3h5ZGwfapEZJfLsXl8GVDR0UBS_GyyOy29n0tA1O9PFQ1y4g/s320/50.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHt37ITdOuk3fOX3LznRCpodOMerph7u9K8pcZ0XtN7y9EZ8MO22nElFRGtz3_md-8ORPrAo-ZcRljj6hQrTidc6X3tK8GNwT3nvBp7aHfK48FvkGwo5xcoQbqIwrfrwiyj-Z6V07VR1oiZTc8mi--FtU3NMA3gzVsKVDGPD-y5cBCmTbaVSkIUDj8PA/s320/49.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMjNi4XPR__JNhtNcoz6kYCrWZM8Pv3vE8lo-5sr6xzZKIJ_aWj0EK-XS5BUjsroIuS5lgKzvIFeJ9fCpunDmxwxvOw1ag3VdZpwRKxJCNWTi2p__J6mMlc-zYudfvtLdX-54NBqEVbZEkCy-xoOu8SqrERQxiMdNYTLknXpL7tmAonq6j7Q8MyOVlUw/s320/48.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm124ETrJjt87olULg2T_2zlW6ELVwaefgTotMu0jWKpLIL_oljLMdLl9kUOZn9hTSbhk0ocA0_SpRfoA8Tmw1N5-ygfXt0snPRZpiH13-39rPojherjlRZ453_xD-UCZgCPBgxVZPXZuUlJERznKiqrI-CTvVBaYI3ABdvArGrBu1nZ69cLcF5VvhXA/s320/47.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguqDNKhtdIfvGQCmU7ychhUTkiJlA4rlfT29sW6kldT9ItV5d0TRwCsNroqsb-G0wDTF1y8zXW8TbRK0XQ_Oy9MUdgXDpantQzAMt9fUnU51aSNzbWII0hKJOPDfyr3aiAofiBY43Do-DX_vvH1lsvqSIuRG27hO80vSO59omKDax6q_Mia1iwy5yXJg/s320/46.jpeg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-JjiNIGoqcMKB6iQEmmERslRaHjhAwSEV572rT6JktOLr97wFrt3i43aTU3mVzPHIywML5J9p-hCTQSNCbYraZSN8mKMzIsfTfROf3UxuFTtWKqsPTaWmHsSS2V_bXLam7GCVW1ZrSStaN-fhru1xsXNBsaZZpLrCPyFdCBFgUqkhEWSKaA-egwyq/s1600/45.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSFriwPFWd1jdqegKg7CfZvvmDVxvXKrGOkg-8MYh-gLJKbeAKakxt_YYHMxCfg0FkbTmCO5D0lzokuIf8YiU4SKKzoh1G4DjSuoh0tXDUQA3barvC38MtYTCuN712jwcKqAjj5sRxN_ZTn7Sc6wyc1OeBTYMrSO3feNf8AjqjvHRvHkHog5AG9520RQ/s320/44.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHbktX5XHVNGl9LT6G5PhspW5f_tIlKTXdSCh1ThA8fk-UKC-O1_KPrWlWEQFEm9FKvNku3Als31-3bn2BTOcbU1trJxEZq0HUfb9h7jABGhtjdweMce6PHjK4xu6-RBNUHw0txfCM_LLyETvD8klRGClLL82wireYIOULWar4i1QohUS9xj8FQcmIyA/s320/43.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu-GvyaYDIyj0AwWTTwYOEXvzqSIL5QJ8pzJ_mRrZqzOAbOCjkBvWzohdBxYU88zC3OPDeILpkPQo_4--7KATMWjGcIV2bXhgmi7JlO0K6FUno4c99yPybyzAcB4HLNkPlqNEEqCWIK1BWAs8lp9zJKZz8-jqSyD19wyFpv9S_0dUcYVvutTy8MN8wpQ/s320/42.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxs9Ptx432FonTgK6wM_H0Sba5JmuJUHUJ4-1FI4x4QnnDIaEDD0v48Hv8QxEp-xGve_9uODkfh5EZSxFmB8Y8FTQitGDwL64ijO9ycI0RXvP4pH9yDbNIRkM5RfpIgOTbZYt6whLY2kXLCM9rGMgQ83el3vdidXXVh1Tz1lNB3mpxmbZ0KpPMafVALQ/s320/41.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwnNCTWmDabhljrW1AXJgAxWWMKnflfumziw5dKM-p-ab2zLc38mkCeAqYdIkw-vxgNNBVKkzgBEn4SOJ-HHJoHr_bwBo6_RQnBPEPiKeEcaKKmKYorfResd-UTVIhUPzjwGgHsyc-Tp4KMkP9WVcFHvn0fXGqaGI3TR-weBRRdZXVxsgd_CPyIUsa8Q/s320/40.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo5M7A4ZMfRG2KdI-23kObClsk7dwQx6CUb-nSAN5iy_eIRSNVSFP9Ykp_TfkvokJyD_B7o8Pb_9OURETrI4gDI4VckN75Y1gHI1cTTFNBo1lqlPxf0kF8nH7c5CKWjh_QjHb-qm00LSZ9m70pyIt6-BkfzXEMEF4CpuYDG0PuuNOntplKQPiO5JPduQ/s320/39.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtRnyqG1-0oF_Tiol7vaqQAVucK_7lsP_HPAs0S0zjqi2MyLsm_onAQ5xhLC0BQ5pVZsBRG5Allp1j_rwkzMsNAbSr0xKlx_O5NpisGzBTxmAlrcdV4Jx3f43SJGLSaBTgZtQvuLTZVFDHCbO6qGiAwd8Ihdsa7W6vBJTtwwB-faIKBfzVpXzI-ndpgA/s320/38.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfiqMNGMn12Awo9DYRaV1TKtsu7HNbVt9Qo_IH8Q2e79bqVAPISU_ZydHL65zMeaWx6NbPBsUIhx2E9CvBc_F533PJ3uycn1KacgNw1iKDTwXpxjCmkMzt3NJ7zKm6Kswd83qdPpnHofmdaT93v0nRtblRSNgN1ZbIuxS_8UgGVRPpNLOlXoGAYcraDQ/s320/37.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibFrdEH-gI4cVkkmvQz93QqhOzEzUFNnA6-H6MRRpJxxWFL_QtjYs8V86ngW99YfQ3omUSELWP59eyHYrPbXvUyoaMg1rRF7OdkL1Tuzd8Jg2tc4XgPnVha6SxeICRfvE7O8ltL-7liMSpNoS8pzkJzpHqquuABmwhmoy1JxSe8FsRGEU5tp7TUbZA/s1600/36.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqcMD6yG7P0AUkkA7UJmcbW6rGAShdaVVeQWCtVXhKgm5AVam1S2pnOVMiDqfMA3O3u6ZekTkerX47Z5FZfUsLFNtT7gIvm9bCuUHM-jsh7X1zeWhBRJv_JRMpAv-Fj2Jfau45033idvCCANTnJ7eVInVkSaIcfIQG96jxnIlJOYgqGf05zwfUp0QDYA/s320/35.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyLtzsuAfK8yviy3lCRM592b-TCMCn3GuGIHTLz9Xyt5Cw-Y_70JAEjwAUgbcy4Rs3U8K90rklsvDUzVVpgSWdc4Q_aJ40of76678kPiJF3murnuFFNojLqkPMRlooGnNdY1cWrGt8W9HDvB4Tnam8BVRwpcr1BcOVm2HElXlK0MTENgBHvm-tC_G1OA/s320/34.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHVUfaluF4x1-f3iTPKqRXd0XuGb2fMaAhIMOOyFk227ZaxWStoaBMI2iMjYTLlsgSwj_ziszlh81twXs4laG9e6BgCCFTwClebfLPdPhf3XaZwHRlb-sOLlqmSNGhQiHSoFIfdXRDuCyF4ROgZXgkyMXoudtWzyZGDOZnXrmq_oH2Y8QCup7hMu5kzg/s320/33.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiFxc3V_UJEd_UD_gigebg3Bv5jRhRGwardLl3MF18qdQYXRj0bRzKq0uZRN-spo5m2R_pdnoztzI4G43mk28KZQ1HI7T3o1pLCbUOBUSPfQUUl3xSDxQuMiaSrejdsm_91CkWfjbQmSiHu7iRl0uYudjfHnNlmmeST6UpjXad6W42jXUGID1N0DlgSg/s320/32.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_BkzzRvRokcA0-Cu4rHetyHfniYvpxD4px2_mMfk2XTT1PW8UOgPiKZ6TOv-3xa6OFiMbAC1hM_BOjDQyFBOIcI_dgR6xNTGi24nTPVtfcrDaUWB0k2niyLAAViahQDnG4xtL0NMx2VRd-cCoVcD0hFG-AWo50S5dfdrq3bbtTc7fMJJ9JLhY7wGV5Q/s320/31.jpg" alt="">
+            </div>    
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOgJfyFcdSP1lHv23QVjDhTu8959MGcGyLFk7oe1PczJSzjyTZpHF0z2OHEq80_s2Te40otPdZ0L6qJR1-55xkBxP2gNncHn4lsD1GPuC18CnBv0bdwOSgLUcYfqB3t-tba4xnwL7YefWR8mqw1XzUDY48J7I3BFqOt99inWn1C-pFsS5CSrMFVdkigA/s320/30.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyvZwZ-_klY-K7r8pN4T8kUlL_eLaEVjczYzAv0_kEsmAQUxX-qktvmEedDKpiw3OOT5eYEcTx6S1as1PgZ77tFjGR7UgybSfaJ1amyS69kC8kwFpIBoQ5ZW62dR5KTHBp5Onn0jDgpebvWVp0BCWSQo8oOD8eOc5wqoipsmwnO_bP6D-8F-b-A7VI8Q/s320/29.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1atPDQ17jthxY5xXwUfHD_JK-Xi3-BKY_7iz0Tyatzox50hnu_xsmjP7FeBVcRyDz95jMoKDtWOZGEwfpRqSeT7h_vPe8488LqOK2aGrsoIdrgHVWMTGYpeaydG-LLgLVVxgLMZqrC7nUY51tq-1SQGrhVFxNqfloo623Utc0tBjRfRFCHCRegNSaug/s320/28.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjySPYDNvKThlZl08VWGyX90kh1FbZW_H8oV-qXBMFweT9zrEvbdlZVile_O5JQ1cltDPOYTEDtqDsOR-jITqz2_c9GWOv5_eR3SZjIo9PvftoSTCOqBdIB_1Ae47L1CDEwOL_ddX85xLHgjZ_e8SOyViD7RJXrcNk6Skr68SdZaAdwvmgxZwOy8y5epA/s320/27.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2E6yWrvyw1af31r2A9lkZvUxg_6MYl1hlSxeoqVsSyeVN1NiQDL3QuxmvZUjSCT7vCxRUoXvx6t1zlY7S3bHgpbWyosBNhC4iA2EP_eaK9CWQ5o0ITDIOBduHPYZSZU_dqU1Is470V14Cj2DH4KwAmoPzu2X4WcjoywfRu0u6k_09Y-nZA59-RzwONg/s320/26.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_a84kEYvEeBswOymrmeQbmFKY7S3B23O8HYphssNn2jFrA6nrfh_KDzUAniB-wUGLopkQb9Z9RvRfBvZmOxn732K3u4WTALQxoRM37mFmCEuMMLaEaI3mLUFU9zZJTeEP6mJ3xzDsvx5YhCO62GU0Gw0QqUbVOyOcTIEKY1j6tr2JLiGY91Qp7WEXQQ/s320/25.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIEL5UifWTs3Pu7bh_QOWcgXlfUrSj_JdEL_cbhYzy83Pjl39QHNSxDEPXLSP9HC2PWHOj5X3NCrBvnkaq_vfI6w7NI5d6zSzzzXhmnNrM1Rw3DyhoRKldQQzF6ekpZYKh1z0Umji3MwyCrNhvx1vkRBhcadUPGUUehi_n1boZjDnfON8dmPZwNOgAhg/s320/24.jpg" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9hUC44XKtRhuS0r4MOsBcJExKcKdA_5zR6DmTCjraYUc0z3aH1Bz50AfZ4Z7wxHKDeJq0lz5Wgk_OjwklSoE9cBcJ7YqEhvHC2hbs64q43W0Ys9fcI9_1--cwk_uthSg5bW8JbNkByOV2rxJOZhzP8HNTNivEtXHRQnbaHXIokPrsXELJvxWw49gC6Q/s320/23.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzIhKj1wYfNCDXlR6j9fPQmHOQkdgrsyWx53AqRdHLVxwdORXdcxd_PN8XUgxTA9faFMNSymiH99f_sJIXC3w5X8nzfKiT81chlI0LDDDBiu-aDy9KptT7DHtSA46yk96Sn3Qx4EsYhsDJDPjMj3vqLNN_K9ECIbrCgXmNRi2Bo89066Yur65-fgP1eA/s320/22.JPG" alt="">
+            </div>
+
+            <!--#21 & $20 Changed!-->
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfuzw9oVSqhq_Sqkp5itwDK9dpa604H4f5wy8X6qsR_bTcY9hB1lD6TtE1akx0n6IHnmiynv-IwJMD1VVYw7A1pE0b2jtjf8rZp8P1desS-X9UZJmBuGEDX8CTYoBtyJCG3YQvhxoMjm6b_KnojSRjNEYuE24iLh1y2Ah5QMvFJpXbODjZGCRh0hiMXQ/s320/19.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMX_mKAROWA_og607iZbxqh-I3aVWj6CyLYkrupEVLy9Z3epUhiNXb0wtIL-C8d_PSV5hAiGVxaPo7oZ_XOTC3cLG5R_IqBhX-4HF3Gb6fbc3lf9C66Jx9q0VJr0m_IZSO64KmQunl7fhEJQm-jt__ae_5UAuuuFyg5rjx747Nl7d4yI0upna0QHSLXg/s320/18.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-WFoghZbaKtExCZwBijH5SXVcP0XChD8wVCUddSSKJKf6kL526Agt3HwUhrlzAKczchBhWCGReezUD66kvQOaENBYCypwpCwVygac4pB5vvLqFwuQCuCSRqo9C1M_OMScdcnzSoco-1zxjRRRGMJItuN1r3EMR0BtVeKNtbr4elmMtS8QoWNjIrwUuw/s320/17.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNLDt7YI85QRRAEx8wz9ZTWQyIIslMK4ZqWUchu8uFh9IS3GtvvpdGSVYpZYOC_JA0fHyFv-9BiHM5ZqNpULTigyPYn4W9d_ftl5737xmQ6jjM5agle8SQZKuiB8w764DucPxIjwz6Gv8PUCoLV2wCpvCk1p-N0yOMvgTNKj6ssIlqPhTIB0svy4VSew/s320/16.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoDgUYseMVpy9GcrKZYM2xVnJsu4leMDIk5miGFwoI7_af-3OW_9fIW44KrYE3185O8Xvpz8Iwj8_Y9KtmC4ZPAECnNcSBmXHxlZVfEuguiRo4WKAv-ryQrj3fUntZdGq4sBfWWz-zred2Eoi4idIbi-obU2Xv4sb_X2gVrpnSsTMhq0lcvtTkUM3Ggw/s320/15.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdO6xLI5Rp_zyk1wGSCfBt4TRWWFB0Q_cPcqVp0J4uMOQdwTiGnF1uvv5fVX_rJzVuDgevRGB7Giik_1f9ZJ6h76wPV-nKfbAFAdzN4yuxzBcyuzF82iYO2Ra8emMxerD7Thpo29PtONCvGKrU_oeoU4AlYXXBFbxXZvvLXlsELaimVcfRM2aHRvJxRQ/s320/14.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju46QW9POnX0Ffi9LPQwOizyMO5EaNgc7ZKcdIxAVAOZ7imWF39RszyZc2RtYLVSJbQQHbAaRLwnfYRnQiLRlszaeSNdIF6YaAzqc_PFHwlWdGjF7t-Pvc4ebUg3djtP1arq1l9nedqYF1A1-brEUT5qcEYqyWaPXojs5Goe2rLM7_jPlgO8SKnVuWUA/s320/13.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeIAedS1MI8b_ngonoyG1_eQQySZYaB5IwekXadxQc89SSi5y2eW4SGWnpOPLq656Oe1nYPbK7HpY32wmnsxQK6Zt_YsGHEhZmrx1c7lkP993jFdhN6WO1eOLH5ZDbDzdugSDFXDAfotCpGRC5PM1f-Ob8gr-a-haski1t7MKg1w4qFuz33TCrtqJOnQ/s320/12.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBblpKkRDL57L3zR2heJamuMPrVwcoo3mOJgPMXQp1llPAsCyb7U_zb7K04f5OOHEuHTEFe8pd32mo1M4br1atN8AczfUC3VO286si7Ya0Hm2Gj97EpmAvx8zNmF3gC8vPiN5qGHldiQmfLHryjK54pBfmxNiaFjailSA3ueJ3TZ_GevNyzVZ3XWlqYg/s320/11.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEEOvjAn5SXUPKlfpnINIIkQ1GsqZByz9UJbWvr8D2DZrv3or_K0YHtD3F9_EQ6rH-VOP24wxtH7SdCpbZmuS3dxvgEatTnir2ydkXKhyzFpDWWxM_bGuQUoaYRUl6NF-dw4YCqoTi7v40n9GY-zAeGWdOHKOR9q8s4b82PHLCB8akhy819uQBcsBOdw/s320/10.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5A4Aic54YhYEj_zcoisZAhpB9_cLYrFL88C3ff9SAzseBdCV804nmGQYu_wqFJsUx8RRqNBv-8yfW-3If70P_sVjdSArPWFSSw0GFGWJ1vuCzSxSO41F3xpzxGVcr_ghrhbL4sdkMr6JUvqiKku97t1qIyPAql5Hj0XDWJpRwmDVW0My0VoVFLP-yqg/s320/9.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimqmAw0WkaXGPtbvtE78coUqGUAN0zbvbqlObXe_Ma2Jx8J3RIO_tuN1Pj6M1_vbKEOhosK--SMhUpHybGqToEeBFQnESmdNCvgZIhuI_IP2Sxl7v8DdA77SzJFxtUbAk6TJjJLMrWFL9B6PHpn6II-XmfdOKRFMEw7JkhjD2CEkp7g49mGlGtm1pXaw/s320/8.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhloYM0jrDaFfe5a3LKK1fHj-shhmzC9X_xjREBOe-5U0696YRY0Ytq95aspS3Eo05w-ola-lDsjRfyIZriq7UFz4kd_BPzLbvsWKqitgTmvIngMGPmdK6ZU6imGX8tKvb4dXqZDXBpgyZpK8pd-YtuU3sFZOESuPl4s1r-cExu4wpxyn1VoYtrlKkoqw/s320/7.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjolbfgqExZjlJmmmMOhLCr7GAoCfBgel6E4fg5XFsOx7iB8ZCycBNvyiSMg2uYMeHvhrqo_I1-9Xc9T6F3LA2g2K0p_BRp28ftoBahUH2L9pGuN3w6PWE18APDQVOOJcpYZ6vTh3deT3DUOgq2Ss1COGmlmeAdb4ni4kKHa3_IekU7awRPDdItW_W7lQ/s320/6.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyxbktJronqMz9NBiLQCIlaQU3F8V0TpSZuKiDtLSOqwZzbT-R4CVyG5EWGtn3Pl2JWtXVG0Off5Y2G3NN1epaxLRon8wGszoZj5TyUSFdQJvp7G5x1mtUEcEEOCeb9B0m9r2YdcFce_GcOH_FkzyVUMGXrnn4qJyu6YFf1Q5Os7RyqAMLLMTXtSj-zQ/s320/5.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj27CcNxpSk32ykTU9sUGxBuCiP-uY4l9AlwZa8nQFKQOLouue8Cgq9UN2z1Lsy8ivBW_Vd6Y6nTYNIJFMBCxxGe2UQw0a7nUHV34g-eOXT1FmoWen6itEcbLJKl5jzX7DtTCucpRf_A47O80Z0S9TKRC0BXJ_j3Rh5gScMH0sd0R0bbZp3E_L_WZHLQ/s320/4.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWaQPBILckT-GZGGA8WsF1Go2BkygU-V4LI1wdE37LQLUh8t5BN3QS18zBg2m4fNrpgJ2KUH_NWMNTSmkwLFy2t2dowAhi6cgUmPW50w23SUMJa1iFfjigHtwj875tEpIhmmNoVHZYiBhgUuhtgOseMDJPi69QzTzETA5Bnys4VCJrPaCN_SIUL7byFg/s320/3.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCluVe7YIdAGb16plqGEoeKKGLuW5_U6ZRCg87N4FYe_0NV_06hqgGkZ-Zy6CR1c7iDggJdZuj2barxSNYkhTs_yNHwJlkQgvsphqPlJY0bBNJHxRdBYziY2dzskAzAAKo5v0KelKmZ1zCY_y7fCgijL-GLAZ9Yowqa_kwHuE_gMwB496W7dx0y_hMjw/s320/2.JPG" alt="">
+            </div>
+
+            <div class="itemm">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh77eqp6p3oUTXCHD-1MCWSadTOyoFqYsRBrNynAAulCCneG9my8b6BarI6W0trOHvDXcJtPVXxx7OT53h8u4I0aRl98PQ0dDMzwi-zpvYHw11qabcgKXQguWdQ2DhycpMPB1LIp1s_covqaHWukkXrBeeLhEybnYDnlo5VXvsPWhb2NdSvbhUXEQdB9w/s320/1.JPG" alt="">
+            </div>
+
+
+        <!-- END image PART -->
+
+
+    </div>
+    <div class="buttons">
+        <button id="prevv" style="cursor: pointer;">◂</button>
+        <button id="nextt" style="cursor: pointer;">▸</button>
+    </div>
+<!--    <ul class="dotss" style="cursor: pointer;">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+</div>
+
+
+    </div>
+    </section>
+
+</center>
+
+
+
+<section id="work-together1"></section>
+    
+<br>
+
+
+
+
+<section class="work-together" id="work-together">
+    <div class="container">
+        <h1 class="title" data-lang="workTitle">
+            <span class="title-dot"></span>
+            تواصل
+        </h1>
+        <p class="text-title" data-lang="workTextTitle">للتعاون والأعمال أو التواصل</p>
+
+        <div class="contact_container" style="width: 100%;">
+
+            
+            <div class="contact_content">
+
+                    <div class="contact_card">
+                        <i class="bx bx-mail-send contact_card-icon"></i>
+                        <h3 class="contact_card-titel" data-lang="cardTitel">بريدي الشخصي</h3>
+                        <span class="contact_card-data">Abdullah@msafh.com</span>
+                        <a href="mailto:abdullah@msafh.com" target="_blank" class="contact_card-link" data-lang="cardSend">أرسل</a>
+                    </div>
+
+            </div>
+
+            <div class="contact_content">
+
+                    <div class="contact_card">
+                        <i class="bx bx-mail-send contact_card-icon"></i>
+                        <h3 class="contact_card-titel" data-lang="cardTitelWh">واتس آب</h3>
+                        <span class="contact_card-data">00966533699194</span>
+                        <a href="https://api.whatsapp.com/send?phone=966533699194" target="_blank" class="contact_card-link" data-lang="cardTitelWhSend">تواصل مباشرة</a>
+                    </div>
+
+             </div>
+            
+<!--                <div class="contact_content content-phone">
+                <div class="contact_title" data-lang="contactTitle">النشرة البريدية</div>
+                <span class="contact_card-data" data-lang="contactEmailText">أفكار وتجارب أشاركها على بريدك الإلكتروني - بدون إزعاج</span>
+                <form action="https://www.getrevue.co/profile/abdullah_yw/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank" class="contact_form">
+                    <label for="member_email">
+                    <div class="contact_form-div">
+                        <div class="contact_form-tag"></div>
+                        <input type="email" name="member[email]" id="member_email" placeholder="اكتب بريدك"  class="contact_form-input">
+                        
+                        <input class="button" type="submit" value="تأكيد" name="member[subscribe]" id="member_submit" ></input>
+                    </div>
+                </label>
+                </form>
+            </div>
+-->
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="sponsor">
+    <div class="container">
+
+        <div class="sponsor-container">
+            <div class="contact_title" data-lang="sponsorTitle">شركاء منحوني ثقتهم</div>
+
+            
+            <!-- START partner PATR -->
+            
+            <!-- #new_partner 
+
+                If you want to add a partner's image, copy the following img element
+                
+
+                    <img src="YOUR IMAGE PATH" alt="" class="sponsor-img">
+                
+                
+                change image path, and put it inside the sponsor_content div , image size 320 * 320 
+
+            -->
+
+        <div class="sponsor_content">
+
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1l1bLKmiHBu5W-f9s6K0E1O5AsvZEaL2J8bs39IflDOv1Fv9aR0PawwFh_IBV2rTk-FjvX4f8LfxVPriCIkBzFRyfK1jEtoePUAmngyEtSxWcP7VtGKc_Oi9IFPKpcKzbKbUgDHPQpeBieM9WBgG-dKC11qmSRGIGwwqneeZTLBRSU7R2GacM7xs5/s1600/1.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ-fKbWqeJbihcxX1mfTlCR8GhJDBd1AUVMzP2-foq8tq7q0riBTdNv_FjVAPshlRKYFpWdxPVvuTGIU_u135b0ikLIaq6HrYlzmoTnbRehfkRu_6mhr88ZsaNpMc6fcm6exFoTryNlOLCNz48VrdedGgkumIXxTM8YxVr83y50Xb6bTubbulhCjhn/s1600/2.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2Ieus0RU_MK6JL-7nvQ_lpPk-fweZ9jZ8MSpphh8EA4VR85KV2NkFSbCM3X_-7untuWhDI2P1T05cO9uRJlFHklb2t964umajya1A-wkuWtyx8asxoRxmkgb452PUm4CXVMoOhW_SkT2_E5RyMbPQpeqzDdZcSL0EtW-m8wNEAEgPSYk5DsX5KxEV/s1600/3.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinp0di_kFsqusEZudEyauCFl9lKY9NMC3TYzejD4qz9z7RHfPK5BJCBtR9Wc4Ko90x8_43sv56L3w7_WCaTnSIh5kD6ajB3TChKd4zku1B_k9Z0jfcGtqcDP60_jnNDds-xiQW-ceoXprG40TpBaZbi1VvbhWTzZWvRye1D5E1wQv_kwXjXZkWYrDr/s1600/4.png" alt="" class="sponsor-img">
+            <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaz9aBtOE4ddnNI8FOOHb--ceBoTKdIGNCotkhlDNBj_s6PwKuFO6c6LUVdsaoGCHZx5CVYia0EVDqawVOFI8y6tdd15CGQW1lP7W2CP6hdxVV1a9syVYekJsTaPf2xsc3Soj_yqb7G1Ud8haUPbsQTuYmgbVhg5aipghHtzIJpd8RMkBjty2t3jIN/s1600/5.png" alt="" class="sponsor-img">-->
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0tBa-aWrhX5V7QqbgbQKlYORuT0XFe0gSklCibvjwTd0mhPwP8VVb5C-ZT0ib-DEqiF5pVjPP1EFNaLqGoMKNsCCLrUQtj0JGe0yKpk716mtjjytMd6fde4ZcK6-HaMjynqKxVETm6wbpDb8ajsABnDXr39nyX-1yTgR3gNjyHY8SV4WYPHXCkop_sQ/s320/1.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho01dKOSsOrCHV_cxnke1PPQrmUP3ZZw0KduW5Df8P4kFHTh1L7JKc76G20WBIxamauUOcw0Q_RfAE1_Fm8axa08KKgnEEA305RX1POHN2v9iShL2GSnayizfdfGs4rV4FMJw2m55eszjCJy2iXFQhYpqlv9FN1-E68B8qPftiF_yIkW8_Oqpk4sph0A/s320/3.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGZko80U5HzV0z-3MaAJa2z6gEmr7KKH3648h0dnK8VgtH_jGIonVDE0tsjarkdE5ab1xP2Ir4nGrAv1h3lcwHr_KFOW7shfjAWvEdYFtT6jjbpa71j96z9mCWJtnNm-O6IksZYQIRpjUwBLibUCoiBAg5cydtUDoaUQ8AyfII72Av6U8mCnRNTCBnYw/s320/4.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBApy5nnlkHVVLpDe6qRfXFjX7rl-P3aOGzHJwXZuXsAHidYdJk3LEcAkX_fX7_UOGMkS9LEOfUC9l-C5Cv7f4unUuJkbp0lnb-P_c23ayyY89QbiYox1om6rCGSCS8C4SlhEpBNutROc1E7IdCWKo-uVN1VFhtJh77Lx1j-Xy5MQX0MUzvB7D1iEyoA/s320/5.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYPpWNueUAu4sV3VCPu92o0wHrWt-mntsgYSSmBUiSHtxPH6lFiJbg-TT8sDvBO-oR_chB4i4VuXKte0m6mayeBzG_4f4LKnLxABqJXLHD-lTja3bBdTxOj6VKGyYt1E59GARvVcjMLKmU8zC2zJkCtKHW-PKal_eKwtd5OM4NQfKRDin_OEXMSaY90A/s320/6.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYMCZC_LxEMHuNSUyUG3Ik9paZfe-YlE-N0fc5Eqht_o2tjac130YUCTf7_Ue6zRuKAsCQst90_vUEqzGY9xl-3REnB1nVBxBHydFdt_ta5fukajegXlz06lCrkOStFKqebUaRoCwmvNiZkTeWvESD9azo0eo3hGYBsk28n5rEQVN-S7LSNs1cjR7j4g/s320/7.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitH84frrHzyC2OnhR5J72UDhhLBa_8lfuASfpSZBGRuO22O4yBMwEwgJ1kOQOTZqp2M8eVHei2ORrkyVoaikrAUkTFVAQ6GS0yQI0J0QfoajPNVEKdgoAZao4A1dd379-HQ5wwm0PDgd6jO5xAgDAs7MODWKfEDUOgMpJczaJ02ljc7dBhqUfdeauZnw/s320/9.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoBJVwWBAwBxMqmMrrMGiNYviatl3bghck2e7VZclvqb6ZHF6AuBdddizeRb2sBqB5UH8jxDRaU_H9OY_fRRUn77K85RXtedBvTCFHnFU2MEcdkAQyWlvFP3BXzljKOBTKXHAFzLAALhD8qLRc2-yvio7czeFBPzoB7ykpxBga0L5N10OLwbZ9vgM8/s1600/8.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz-dbRMXiDXWASc8Jnq0aTdTxKyhtAJB8yahX48Z9dxVv3wPY8s1c9YiFPfULXCydbB0WGhGG1_LbvWWzr5yiKobXUCCEJfFF4Iygqfx4Q38Btw5KbrpykOHLyFFYSyPnB_xvasEvQwS21K6rKwt_UVkQ6wHCGbD767JiHwKYYoXcmyD0Bz8gjbsrUow/s320/10.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKpXEzfCSBHihNTRqYOw41W6DsQd3dm4abPaTxSSvZJJsXEZWrZa93usAxuo_RtOJ6VTCw0oNIOSURbSCrYhUXRPO9BjETOfpfqXR1wyIjTeg5x34CcFXRjO7vjcgWhcFJ-GoD1152D2ydf7USg14XcP8DpiB8NpFcOq6W-F2S3KvnjpjVZj2nS7KO/s1600/11.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwS0WMriVI2CitJ5aQMiH405p34TFtpKLufnwicERsu6YgXKSnoczxBotkoYhYZlVA_ft63dgsMWQapVIsgAT_MGvahOej62_doyIa4oFney-pXm225g03FNaRzH4vYTsnlqdvp4pYdbOI98zg4rvgPKEGZIPf2N1zdkSu9bFNuNmWr_EQMrMum5Bo8Q/s320/12.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgu32tWUSKkN82BrkYWowwAG6uhksTIaGmVOplH__kSOmAwXB6re1spiVzU2oNN3b_IkJDnhO8s4IeClNukJbin6N5vGC2dfepj4dhHcMlfX2nyBZ56MkNXMGCFLTM-lO2s5iU1KgychuJa30cetuX-M9NfgJERpENfizEGEym0jWiXNwsmPuCvTuh/s1600/13.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz0uOy4wJYReWCc_PEgmxu9dX-CE9bwosoosQXqVMVlatkl49uXOgsbElr6sILbSNAN1GCAuaNW4YMIfknEyt5SFPIW7QvzB9Swfut2_R3U9IGRRtVAdmivum8lU5VPDDLP_dcSdwseFUnHzKhhL6aoA5xQKBvph2Ia2-Yad3WAPsuhT9QZEW7m7W8Cw/s320/14.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVcIyh2RLw9m27LKwik0bA2hj8Fe3pwycfdJJXrOKGTKBghzbqo-4zpMcsWLSsOdG-JaMVuDTgG0i9_8E3C6qODFCNYaTkzzpyFVyOiPql2F6DxkZxzZT5hNE9uCbLBa6uH4m2LRC1n6mFeFFKFMUimRak_kJrXrEGi4KRpzg13HcV0mxuLjD6bZV9jw/s320/15.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS6_ziDJvAzVE3dY2BfGnH47UW-zMwARVSaH9lgEc-yx1l7wB7QH8pt2WSPc2qpQ0I2NKjQ9M3AKRV4kP0GYTI93cKTXa_osffrEWNnVYVGOKvJGbw9sR2RzorWjEvaZxJevHtKxu3_ozJeSP3dWYXM7EF1K8vRtMiJrl68Oy_6_sT_7Vh-1FgTfejLA/s320/2.png" alt="" class="sponsor-img">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyTk2dfQkZHTcy-0x6dSfUc62hUHgStvOk0Ze-m-Rxd39x3a6_KEUTZqsfxSutsKnBbxTScTlVFCcNtR0PMQ02Z8zbhSlcgSRGBRdbANavw8ZathAtOzHGAZmA5QO5TDJJGNLEjfNGKuyF5bv-NS2LBngYux3GPlwswTJBkW97aSv3j8D0f8_s90hMWscY/s320/16.png" alt="" class="sponsor-img">
+            
+        </div>
+        <!-- END partner PATR -->
+        
+        
+
+
+
+    </div>
+</div>
+</section>
+
+
+
+<footer>
+    <div class="container">
+        <div class="copyright" data-lang="copyrightText">
+             جميع الحقوق محفوظة لـ د. عبدالله العلاوي © ٢٠٢٤
+        </div>
+        
+        <div class="footer-contact_container">
+            
+            <div class="Contact-container">
+            <div class="contact_title" data-lang="footerContactText">تابعني على وسائل التواصل</div>
+                
+                <div class="footer-socil-icon">
+                    <a href="https://www.facebook.com/Abdullah.yw" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Abdullah_yw" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://t.snapchat.com/YGRoHDxw" target="_blank"><i class="fa-brands fa-snapchat"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=966533699194" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/Abdullah_yw" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:abdullah@msafh.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.youtube.com/channel/UCUdtq-Fvlw7_NjzduNTZsbg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@abdullah_yw?lang=ar" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCkbZRVTQOWqKlTHfYnFUMJQ" target="_blank"><i class="fa-solid fa-microphone"></i></a>
+                    <a href="https://www.youtube.com/channel/UCgz7y_raZ9YpyA3mKqvJTag" target="_blank" class="shorts"></a>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    </div>
+</footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+
+
+
+
+<script>
+
+    /* ============== Language / US,AR =============== */
+    
+    // Put the sentences here 
+    
+    let lang = {
+        ar: {
+            tabTitle: "عبدالله العلاوي",
+            headerH2: "عبدالله العلاوي",
+            contact: "📮 تواصل",
+    /*      links: "🔗 روابط",  */
+            shot: "📸 لقطة",
+            myWorks: "📍 أعمالي",
+            myStory: "📝 قصتي",
+            heroWelcome: "أهلا معك",
+            heroAbdullah: "عبدالله العلاوي",
+            heroText: "طبيب أسنان ومؤسس مجتمع مسافة، أعمل على تحسين جودة حياتي اليومية<br>وأشارك معك توثيق الرحلة بمواقع التواصل الاجتماعي.",
+            forMore: "للمزيد",
+            aboutTitle: `<span class="title-dot"></span> قصتي`,
+            storyText: `
+            
+            حياااك الله من جديد!<br>
+            معك عبدالله العلاوي، طبيب أسنان سعودي<br>
+            وفي الوقت الحالي أعمل يوميًّا على تحسين حياتي. 🚀<br>
+            صحيح أنّ رحلة التحسين شاقّة وغير منتهية، ولكنّها أيضًا ممتعة! <br>
+            وبوجودك معي، فإنّ التأثير يتعداني ويصل إلى الجميع… وهذا هو الهدف الحقيقي من كل شي!<br>
+            
+            <br>
+            • أهمّ محطات الرحلة كانت:<br>
+            <br>
+            - تأسيس مجتمع مسافة، الذي يهدف إلى تقريب المسافة بين شخصيتك المستقبلية والحالية من خلال معسكرات وورش عمل وتحديات نطلقها باستمرار.<br>
+            - تأسيس مبادرة "أنت أنا"، والتي - على الصعيد الأكاديمي - ساعدت آلاف الطلاب، ثم انضمّ طلاب الجامعات من السعودية وخارجها للتعاون مع طلبة الثانوية بكل حب للعطاء. 🎓 <br>
+            - التخرّج من برنامج قمم الذي يهدف إلى تمكين القيادات الواعدة من طلاب وطالبات جامعات المملكة العربية السعودية.<br>
+            
+            <br>
+            • حصلت على عدة جوائز، أهمها :<br>
+            <br>
+            - جائزة الأميرة صيتة في اليوم الوطني 88 – للفوز بالمركز الأول بمسابقة أفضل فكرة عمل اجتماعي، 2018.<br>
+            - جائزة تقديم محتوى إعلامي توعوي مسموع – للفوز بالمركز الثالث بمسابقة مدينة الملك عبدالعزيز للعلوم والتقنية، 2018.<br>
+            - جائزة وعي – الفوز بالمركز الأول- مسار السناب شات، وزارة الصحة السعودية، 2018.<br>
+            - جائزة طبيب الامتياز الأفضل في التواصل – كلية طب الأسنان، جامعة الملك عبدالعزيز، 2019.<br>
+            - جائزة أم الجود للتوعية بالثقافة العامة، مؤسسة جائزة الأميرة صيتة بنت عبدالعزيز للتميز في العمل الاجتماعي، 2022.<br>
+            
+            <br>
+            • تشرفت - وبكلّ فخر - بتمثيل المملكة العربية السعودية في عدة محافل، منها:<br>
+            <br>
+            - 2018، برنامج القيادات الإعلامية العربية الشابة بالإمارات.<br>
+            - 2018، سفير برنامج MBC الأمل بالجامعات السعودية.<br>
+            - 2019، منتدى شباب العالم بمصر.<br>
+            - 2019، <a href="https://youtu.be/iv5aLFR566s" target="_blank">كلمة الخريجين</a> بالحفل السنوي، جامعة الملك عبدالعزيز.<br>
+            
+            <br>
+            • قدمت محاضرات وخطابات تعليمية، لكن أقربها إلى قلبي حتى اليوم:<br>
+            خطاب "أسمع العالم صوتك" في برنامج <a href="https://youtu.be/foBHMKhSHu4 " target="_blank">TEDxKAU</a>، جامعة الملك عبد العزيز.<br>
+            <br>
+            • شاركت بتقديم ورش عمل، منها: <br>
+            <br>
+            - مسك المهارات.<br>
+            - TEDx، اليوم الوطني في جامعة طيبة.<br>
+            - مؤتمر اليوم العالمي للتطوع، منطقة المدينة المنورة.<br>
+            - 2019- 2022، سلسلة ورشة عمل (صناعة التوعية الصحية) حول مدن السعودية.<br>
+            
+            <br>
+            • بختام 2022م وبداية 2023م، "روتين التسعين" هو المشروع الأهم لمسافة ومجتمعها.<br>
+            
+            <br>
+            وكلّ هذا بفضل الله وكرمه؛<br>
+            وبإذنه، فالرحلة تستمر... <br>
+            `,
+            projectsTitle: `<span class="title-dot"></span> أعمالي`,
+            all: "الكل",
+            vdieos: "فيديوهات",
+            courses: "دورات",
+            blog: "المدونة",
+            projectCardCourse01: "دورة القدرات الشاملة",
+            projectCardCourse0: "دورة فن المذاكرة بذكاء",
+            projectCardCourse1: "دورة رحلة الإنتاجية",
+            projectCardCourse2: "كيف تبني نظام إنتاجية بسيط وفعال؟",
+            projectCardCourse3: "كيف تتخلص من التشتت والإرهاق وتضاعف تركيزك ونشاطك؟",
+            projectCardCourse4: "كيف تتخلص من الفوضى وتدير وقتك وترتب أولوياتك؟",
+            projectCardCourse5: "كيف تبني عادات إيجابية وتتخلص من التسويف والمثالية؟",
+            projectCardCourse6: "تحدي 1% برمضان",
+            articlOne: "عشر أمور تركتها من حياتي",
+            articlTwo: "عادة الاستيقاظ المبّكر؟",
+            articlThree: "التدوين اليومي .. علاج فعّال", 
+            articl4: "بداية يوم جديد", 
+            articl5: "غفوة الدوام !", 
+            articl6: "تطبيقات مجانية تساعدك بالتعلّم", 
+            articl7: "فقدت الشغف .. وكذا تجاوزته",
+            articl8: "كيف تكون لصاً لقلوب الناس؟",
+            articl9: "عشر قناعات تغيرت بحياتي",
+            worldTitle: `<span class="title-dot"></span> لقطة`,
+            shotText: "أكثر من ١٠٠ لقطة تختصر المعنى",
+        /*  linksTitle: `<span class="title-dot"></span> روابط`,  */
+            linksText: ":) اضغط .. توصل",
+            workTitle: `<span class="title-dot"></span> تواصل`,
+            workTextTitle: "للتعاون والأعمال أو التواصل",
+            cardTitel: "بريدي الشخصي",
+            cardSend: "أرسل",
+            cardTitelWh: "واتس آب",
+            cardTitelWhSend: "تواصل مباشرة",
+            contactTitle: "النشرة البريدية",
+            contactEmailText: "أفكار وتجارب أشاركها على بريدك الإلكتروني - بدون إزعاج",
+            writeEmail: "اكتب بريدك",
+            contactBtn: "تأكيد",
+            sponsorTitle: "شركاء منحوني ثقتهم",
+            footerContactText: "تابعني على وسائل التواصل",
+            copyrightText:" جميع الحقوق محفوظة لـ د. عبدالله العلاوي &copy; ٢٠٢٤",
+            
+        },
+    
+        en: {
+            tabTitle: "Abdullah Al-Alawi",
+            headerH2: "Abdullah Al-Alawi",
+            contact: "📮 Contact",
+            links: "🔗 Links",
+            shot: "📸 Shot",
+            myWorks: "📍 My Works",
+            myStory: "📝 My Story",
+            heroWelcome: "Welcome! It’s",
+            heroAbdullah: "Abdullah Al-Alawi",
+            heroText: "A dentist who founded Masafah Community. I work to enhance<br>the quality of my daily life and share it with you via social media platforms.",
+            forMore: "For more",
+            aboutTitle: `<span class="title-dot"></span> My Story`,
+            storyText: `
+            Welcome again!<br>
+    It’s Abdullah Al-Alawi, a Saudi dentist.<br>
+    Currently, I am working on improving my life. 🚀<br>
+    It's true that self-improvement is a tough and never-ending journey, but it's also enjoyable! And having you by my side, the impact extends far beyond myself, which is the actual goal of this endeavor!<br>
+    <br>
+        • Significant milestones in my life include:<br>
+    <br>
+        - Founding Masafah Community, which seeks to bridge the gap between your future and present selves by continuously offering online camps, workshops, and challenges.<br>
+        - Founding the "Anta Ana" initiative, which, in cooperation with university students from Saudi Arabia and abroad and out of a love of giving, has helped thousands of high school students on an academic level.<br>
+        - Graduation from the Qimam program, which strives to empower future leaders among male and female university students in the Kingdom of Saudi Arabia.<br>
+    <br>
+        • I have received a number of awards, the most significant of which are:<br>
+    <br>
+        - Princess Seetah Award on the 88th National Day - for winning first place in the competition for the best social work idea, 2018.<br>
+        - Award for providing audible awareness media content - for winning third place in the King Abdulaziz City for Science and Technology competition, 2018.<br>
+        - Wa’ai Award- Winning first place–  Snapchat track, Saudi Ministry of Health, 2018.<br>
+        - Doctor of Excellence Award for Best Communication–  College of Dentistry, King Abdulaziz University, 2019.<br>
+        - Umm Al-Joud Award for creating general awareness of social responsibility needs in society - Foundation of the Princess Seetah bint Abdulaziz Award for Excellence in Social Work, 2022.<br>
+    <br>
+        • I had the great honor and pride to represent the Kingdom of Saudi Arabia in a number of forums, including:<br>
+    
+        - 2018, Young Arab Media Leaders Program in the Emirates.<br>
+        - 2018, The ambassador of the MBC Al-Amal Program in Saudi universities.<br>
+        - 2019, World Youth Forum in Egypt.<br>
+        - 2019, <a href="https://youtu.be/iv5aLFR566s" target="_blank">Alumni speech</a> at the annual ceremony, King Abdulaziz University.<br>
+    <br>
+        • I've given lectures and educational speeches, but the one that remains dearest to my heart is:<br>
+    "Let the World Hear Your Voice 🌍" at <a href="https://youtu.be/foBHMKhSHu4 " target="_blank">TEDxKAU</a>, King Abdulaziz University.<br>
+    <br>
+        • Participated in providing workshops:<br>
+        - Misk Skills.<br>
+        - Master of Ceremonies at TEDxTaibahU, on the National Day at Taibah University.<br>
+        - The International Volunteer Day Conference in Al-Madinah Al-Munawwarah.<br>
+        - Health Awareness Workshop Series in Saudi Cities, 2019-2022.<br>
+    <br>
+        • God willing, "The Routine of the Ninety Days" is the most significant endeavor for Masafah and its community between the end of 2022 and the beginning of 2023.<br>
+    <br>
+    All of this is thanks to Allah's generosity and grace;<br>
+    and by His will, the journey continues...
+            `,
+            projectsTitle: `<span class="title-dot"></span> My Works`,
+            all: "All",
+            vdieos: "Videos",
+            courses: "Courses",
+            blog: "Blog",
+            projectCardCourse01: "Comprehensive Capabilities Course",
+            projectCardCourse0: "How to Study in a Smart Way Course",
+            projectCardCourse1: "Productivity Journey Course",
+            projectCardCourse2: "How to build a simple and effective productive system ?",
+            projectCardCourse3: "How to get rid of distraction and fatigue and double your focus and activity?",
+            projectCardCourse4: "How to get rid of chaos, manage your time and prioritize?",
+            projectCardCourse5: "How to build positive habits and get rid of procrastination and idealism?",
+            projectCardCourse6: "1% challenge in Ramadan",
+            articlOne: "10 Things I Have Given up on in<br> My Life",
+            articlTwo: "The Habit of Waking Up Early",
+            articlThree: "Daily Blogging", 
+            articl4: "The beginning of a new day", 
+            articl5: "Work nap!", 
+            articl6: "Free apps to help you learn",
+            articl7: "I lost the passion .. and that's how I passed it",
+            articl8: "How to be a thief for people's hearts?",
+            articl9: "Ten convictions have changed in my life",
+            worldTitle: `<span class="title-dot"></span> Shot`,
+            shotText: "More than 100 shots sums up the meaning",
+            linksTitle: `<span class="title-dot"></span> Links`,
+            linksText: "Click on the link",
+            workTitle: `<span class="title-dot"></span> Contact`,
+            workTextTitle: "For cooperation, business or communication",
+            cardTitel: "Personal Email",
+            cardSend: "Send",
+            cardTitelWh: "WhatsApp",
+            cardTitelWhSend: "For direct contact",
+            contactTitle: "Newsletter",
+            contactEmailText: "To share thoughts and experiences with you<br>via email - without disturbance",
+            writeEmail: "Enter your Email",
+            contactBtn: "Confirm",
+            sponsorTitle: "Partners who have placed their confidence in me",
+            footerContactText: "Follow me on social media platforms",
+            copyrightText:"All rights reserved to Dr. Abdullah Alawi &copy; 2024",
+    
+            
+        }
+    }
+    
+    let selectorLang = document.getElementById('lang-sele');
+    selectorLang.onchange = function () {
+        let language = selectorLang.options[selectorLang.selectedIndex].value;
+        let nodes = document.querySelectorAll('[data-lang]');
+    
+        for (let i = 0; i < nodes.length; i++) {
+            let key = nodes[i].getAttribute('data-lang');
+            nodes[i].innerHTML = lang[language][key];
+            
+            
+        }
+        
+        document.querySelector('.contact_form-input').placeholder = lang.en.writeEmail;
+        document.querySelector('.button').value = lang.en.contactBtn;
+    
+        
+        if (selectorLang.options[selectorLang.selectedIndex].value === "en") {
+            document.getElementById('main-container').style.cssText = `
+            flex-direction: row-reverse`;
+    
+            document.querySelector('.hero').style.cssText = `direction: ltr`;
+    
+            document.getElementById('about-container').style.cssText = `
+            flex-direction: row-reverse`
+            
+            document.querySelector('.text-box').style.cssText = `
+            direction: ltr; 
+            margin-left: 3rem;
+            margin-right: 0;
+            `;
+            
+            
+    
+            for (let i = 0; i < document.querySelectorAll('.card-text').length; i++) {
+                
+                document.querySelectorAll('.card-text')[i].style.cssText = `
+            flex-direction: row-reverse;
+            `;
+            };
+    
+    
+    
+            for (let i = 0; i < document.querySelectorAll('.title-dot').length; i++) {
+                
+                document.querySelectorAll('.title-dot')[i].style.cssText = `
+                right: auto;
+                left: -7px;
+                `;
+                
+            };
+    
+    
+            for (let i = 0; i < document.querySelectorAll('.cardH').length; i++) {
+                document.querySelectorAll('.cardH')[i].style.cssText = `
+            direction: ltr;
+            text-align: left;
+            `;
+                
+            }
+    
+    
+        } else {
+    
+            document.querySelector('.contact_form-input').placeholder = lang.ar.writeEmail;
+            document.querySelector('.button').value = lang.ar.contactBtn;
+    
+    
+            document.getElementById('main-container').style.cssText = `
+            flex-direction: auto`;
+    
+            document.querySelector('.hero').style.cssText = `direction: rtl`;
+    
+            document.getElementById('about-container').style.cssText = `
+            flex-direction: row`;
+    
+            document.querySelector('.text-box').style.cssText = `
+            direction: rtl; 
+            margin-left: 0;
+            margin-right: 3rem;
+            `;
+    
+    
+            for (let i = 0; i < document.querySelectorAll('.card-text').length; i++) {
+                
+                document.querySelectorAll('.card-text')[i].style.cssText = `
+            flex-direction: row;
+            `;
+            };
+    
+            for (let i = 0; i < document.querySelectorAll('.cardH').length; i++) {
+                document.querySelectorAll('.cardH')[i].style.cssText = `
+                direction: rlt;
+                text-align: rigth;
+            `;
+                
+            }
+    
+        }
+    
+    
+    }
+    
+    /* ============== menu phone ============== */
+    
+    let icon = document.querySelector(".icon");
+    
+    let spanOen = document.querySelectorAll("span")[1];
+    let spanTwe = document.querySelectorAll("span")[2];
+    let spanTree = document.querySelectorAll("span")[3];
+    
+    let list = document.getElementById("phone-list");
+    
+    
+    icon.onclick = function () {
+    
+        list.classList.toggle("active")
+    
+        if (list.className === "active") {
+    
+            spanTwe.style.cssText = `
+            width: 100%;
+            opacity: 0;
+            `;
+        
+            spanOen.style.cssText = `
+            top: 6px;
+            transform: rotate(45deg);
+            `;
+        
+            spanTree.style.cssText = `
+            top: 6px;
+            transform: rotate(-45deg);
+            `;
+    
+        } else {
+            spanTwe.style.cssText = `
+            width: 100%;
+            opacity: 1;
+            top: 0;
+            `;
+        
+            spanOen.style.cssText = `
+            top: 6px;
+            transform: rotate(0deg);
+            `;
+        
+            spanTree.style.cssText = `
+            top: 12px;
+            transform: rotate(0deg);
+            `;
+        }
+    
+    }
+    
+    /* ============ youtube videos ============  #new_video function   */
+    
+    const loadVideo = (iframe) => {
+        const cid = "UCUdtq-Fvlw7_NjzduNTZsbg";
+        const channelURL = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${cid}`);
+        const reqURL = `https://api.rss2json.com/v1/api.json?rss_url=${channelURL}`;
+    
+        fetch(reqURL)
+            .then(response => response.json())
+            .then(result => {
+            console.log(result);
+                const videoNumber = iframe.getAttribute('vnum');
+                const link = result.items[videoNumber].link;
+                const id = link.substr(link.indexOf("=") + 1);
+                iframe.setAttribute("src", `https://youtube.com/embed/${id}?rel=0&loop=1`);
+            })
+            .catch(error => console.log('error', error));
+    }
+    
+    const iframes = document.getElementsByClassName('latestVideoEmbed');
+    for (let i = 0, len = iframes.length; i < len; i++) {
+        loadVideo(iframes[i]);
+    }
+    
+    /* =========== get links from linktree =========== */ 
+    
+    /*   fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://linktr.ee/Abdullah_yw')}`)
+    .then(
+        function(response) {
+            if (response.ok) return response.json()
+            throw new Error('Network response was not ok.')
+    
+        }).then(function (data) {
+    
+    
+            let linkTer  = data.contents;
+    
+    
+    let linktreeBody = linkTer.slice(linkTer.indexOf("<body>"));
+    
+    
+    for (let i = 0; i < linktreeBody.length; i++) {
+        
+        if ( linktreeBody.slice(i, i+ 10) === `<a href="h` ) {
+    
+            let rangeA = linktreeBody.slice(i, i+350);
+            let getA = rangeA.slice(rangeA.indexOf(`<a href="h`), rangeA.indexOf("</a>"));
+            let getP = getA.slice(getA.indexOf("<p"), getA.indexOf("</p>"));
+            var getLinks = getA.split(`"`)[1];
+    
+            
+            let myLinks = document.createElement('a');
+            let myLinksTitle = getP.slice(getP.indexOf(">") + 1);
+            let myLinksText = document.createTextNode(myLinksTitle);
+    
+            myLinks.className = "links";
+    
+            myLinks.appendChild(myLinksText);
+    
+            document.getElementById('links-cards').appendChild(myLinks);
+    
+            myLinks.setAttribute("href", getLinks);
+            myLinks.setAttribute("target", "_blank");
+    
+            myLinks.style.cssText = `
+            padding: 1.5rem;
+            box-shadow: rgb(0 0 0 / 3%) 0px 0px 20px 9px;
+            display: flex;
+            border-radius: 1rem;
+            color: var(--second-color);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 300px;
+            `;        
+        }
+        
+    };
+    
+    });   */
+    
+    /* =========== mixitup =========== */
+    
+    let mixerPortfolio = mixitup('.project_container', {
+        selectors: {
+            target: '.project_card'
+        },
+        animation: {
+            duration: 300
+        }
+    });
+    
+    /* =========== Carousel =========== */
+    
+    let sliderr = document.querySelector('.sliderr .listt');
+    let itemss = document.querySelectorAll('.sliderr .listt .itemm');
+    let nextt = document.getElementById('nextt');
+    let prevv = document.getElementById('prevv');
+    let dotss = document.querySelectorAll('.sliderr .dotss li');
+    
+    let lengthItems = itemss.length - 1;
+    let active = 0;
+    nextt.onclick = function(){
+        active = active + 1 <= lengthItems ? active + 1 : 0;
+        reloadSlider();
+    }
+    prevv.onclick = function(){
+        active = active - 1 >= 0 ? active - 1 : lengthItems;
+        reloadSlider();
+    }
+    let refreshInterval = setInterval(()=> {nextt.click()}, 4000);
+    function reloadSlider(){
+        sliderr.style.left = -itemss[active].offsetLeft + 'px';
+        // 
+        let last_active_dot = document.querySelector('.sliderr .dotss li.active');
+        last_active_dot.classList.remove('active');
+        dotss[active].classList.add('active');
+    
+        clearInterval(refreshInterval);
+        refreshInterval = setInterval(()=> {nextt.click()}, 4000);
+    
+        
+    }
+    
+    dotss.forEach((li, key) => {
+        li.addEventListener('click', ()=>{
+             active = key;
+             reloadSlider();
+        })
+    })
+    window.onresize = function(event) {
+        reloadSlider();
+    };
+    
+        </script>
+
+
+
+
+
+
+
+
+
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+
+
+
+
+
+
+    
+</body>
+</html>
